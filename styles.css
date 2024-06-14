@@ -1,0 +1,71 @@
+/* css styles */
+/*les paragaraphes sont justifiés*/
+p {
+  /*color: blue;*/
+  text-align: justify;
+  text-justify: inter-word;
+}
+/* -------------------------------- */
+body{
+  font-family: Helvetica;
+  font-size: 12pt;
+}
+/* -------------------------------- */
+legen {
+  font-size: normal;
+	font-weight:bold;
+	/*line-height: 11px;*/
+  text-align: justify;
+/*	line-height: 7px;*/
+}
+/* -------------------------------- */
+.imageflottanteG
+{
+   float: left;
+   padding-right: 20px;
+   padding-bottom: 8px;
+	/*font-size: small;
+	font-weight:bold;
+	width: auto;/*200px*/
+  /*  
+	margin: auto;
+    text-align: center;*/
+}
+/* -------------------------------- */
+.imageflottanteD
+{
+   float: right;
+   /*padding:10px;*/
+    padding-left: 40px;
+    padding-bottom: 8px;
+}
+/* -------------------------------- */
+/* formater le tableau de la page index */
+.tabindex{
+/*   margin-left:auto;
+   margin-right:auto; */
+   width: 90%;
+   font-size: 110%;
+   text-justify: inter-word;
+   /*background-color: #FFFDE6;*/
+}
+/* -------------------------------- */
+/* formater les titres */
+h1{
+  font-size: 150%;
+  /*font-weight:bold;*/
+}
+h2{
+  font-size: 130%;
+  /* font-style: normal;*/
+}
+h3{
+  font-size: 110%;
+}
+
+/* pour le trait autour des iframe*/
+.custom-border {
+    border: 2px solid black; /* Définit une bordure de 2 pixels solide noire */
+}
+
+

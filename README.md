@@ -1,2 +1,2 @@
 # home2
-home page
+Pages en Anglais

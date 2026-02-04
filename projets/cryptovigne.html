@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Projet Cryptovigne – J.-P. Rossi</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../im0/insecte.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-5b8f9b2f3cffee265242a5d44fbb1e00.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<script src="../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="../site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+<script src="../site_libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="../site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+<script src="../site_libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="../site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="../site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+<script src="../site_libs/leaflet-binding-2.2.3/leaflet.js"></script>
+<script src="../site_libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
+<script src="../site_libs/leaflet-providers-plugin-2.2.3/leaflet-providers-plugin.js"></script>
+<link href="../site_libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.css" rel="stylesheet">
+<script src="../site_libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.min.js"></script>
+<link href="../site_libs/fontawesome-4.7.0/font-awesome.min.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">J.-P. Rossi</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../02-research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../03-projects.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../04-publications.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://rossi-jp.github.io/home/" target="_blank"> 
+<span class="menu-text">🇫🇷 Français</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#cryptoblabes-gnidiella-la-pyrale-du-daphné" id="toc-cryptoblabes-gnidiella-la-pyrale-du-daphné" class="nav-link active" data-scroll-target="#cryptoblabes-gnidiella-la-pyrale-du-daphné"><em>Cryptoblabes gnidiella</em>, la pyrale du daphné</a></li>
+  <li><a href="#distribution-géographique" id="toc-distribution-géographique" class="nav-link" data-scroll-target="#distribution-géographique">Distribution géographique</a></li>
+  <li><a href="#compilation-des-données-doccurences" id="toc-compilation-des-données-doccurences" class="nav-link" data-scroll-target="#compilation-des-données-doccurences">Compilation des données d’occurences</a></li>
+  <li><a href="#références-citées" id="toc-références-citées" class="nav-link" data-scroll-target="#références-citées">Références citées</a></li>
+  <li><a href="#liste-complète-des-publications-compilées-dans-le-cadre-de-cryptovigne" id="toc-liste-complète-des-publications-compilées-dans-le-cadre-de-cryptovigne" class="nav-link" data-scroll-target="#liste-complète-des-publications-compilées-dans-le-cadre-de-cryptovigne">Liste complète des publications compilées dans le cadre de Cryptovigne</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Projet Cryptovigne</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Cryptovigne est un projet portant sur la pyrale du daphné, <em>Cryptoblabes gnidiella</em>, coordonné par Nicolas Constant (IFV, Rodilhan). Le CBGP intervient dans trois volets de ce projet :</p>
+<ul>
+<li><p>Fiabiliser l’identification de <em>C. gnidiella</em> à tous les stades de son développement (Figure 1) (Jean-Claude Streito, Eric Pierre, Guénaëlle Genson)</p></li>
+<li><p>Etude de la dynamique des populations, de la dispersion et de la migration par la génétique des populations (Carole Kerdelhué, Nathalie Gauthier, Réjane Streiff)</p></li>
+<li><p>Modélisation de l’aire de distribution potentielle de <em>C. gnidiella</em> dans les conditions climatiques actuelles et futures (2050) (Jean-Pierre Rossi)</p>
+<ul>
+<li>Distribution potentielle dans les conditions climatiques actuelles</li>
+<li>Evolution possible selon différents scénarios de changement climatique</li>
+</ul></li>
+</ul>
+<section id="cryptoblabes-gnidiella-la-pyrale-du-daphné" class="level1">
+<h1><em>Cryptoblabes gnidiella</em>, la pyrale du daphné</h1>
+<!-- <div class="imageflottanteD" style="height=160px ; width=248px"> -->
+<div class="imageflottanteD">
+<p><img src="cryptovigne/crypto-a.png" title="Cryptoblabes gnidiella" alt="Cryptoblabes gnidiella" width="350" style="padding:1px;border:thin solid white"> <br> <img src="cryptovigne/crypto-b.png" title="Cryptoblabes gnidiella" alt="Cryptoblabes gnidiella" width="350" style="padding:1px;border:thin solid white"> <br> <img src="cryptovigne/crypto-c.png" title="Cryptoblabes gnidiella" alt="Cryptoblabes gnidiella" width="350" style="padding:1px;border:thin solid white"> <br> <span class="legen"><strong>Figure 1.</strong> La pyrale du daphné <em>Cryptoblabes gnidiella</em>. (a) adulte, (b) jeune larve, (c) larve mature (photo Ioriatti et al 2012).</span></p>
+</div>
+<p>
+<em>Cryptoblabes gnidiella</em> est un ravageur secondaire de la vigne (Millière, 1867) réparti largement dans la région méditerranéenne. L’espèce est également signalée en Malaisie, en Nouvelle-Zélande, à Hawaï, dans certains pays africains et asiatiques, ainsi que dans de nombreuses régions tropicales et subtropicales d’Amérique du Nord et du Sud. <em>C. gnidiella</em> est une espèce assez fréquente qui occasionne des dégâts importants sur la vigne dans les zones littorales d’Italie, de France et d’autres pays de la région méditerranéenne. En France, les dégâts causés au vignoble sont donc importants dans le sud du pays. L’espèce se développe principalement sur les raisins en cours de maturation, entraînant une dégradation progressive des grappes.
+</p>
+<p>
+<strong>Plantes hôtes.</strong> <em>C. gnidiella</em> est un insecte polyphage se développant sur 60 espèces végétales réparties dans 30 familles botaniques incluant <em>Actinidia deliciosa</em>, <em>Citrus spp.</em>, <em>Daphne spp.</em>, <em>Daucus carota</em>, <em>Diospyros kaki</em>, <em>Eriobotrya japonica</em>, <em>Gossypium herbaceum</em>, <em>Malus spp.</em>, <em>Persea americana</em>, <em>Prunus spp.</em>, <em>Pyrus spp.</em>, <em>Ricinus communis</em>, <em>Tamarix spp.</em>, et <em>Vitis spp.</em>. <em>C. gnidiella</em> est souvent associée à d’autres insectes tels que des lépidoptères (<em>L. botrana</em>) ou des hémiptères (pucerons et pseudococcidés) qui produisent du miellat consommé par les larves de la pyrale du daphné. C’est la raison pour laquelle <em>C. gnidiella</em> porte le nom commun de « honeydew moth » en anglais.
+</p>
+<p>
+<strong>Cycle de vie</strong> <em>C. gnidiella</em> fait plusieurs générations par an dans les régions du bassin méditerranéen. Ce chiffre dépend de la température et varie donc avec l’altitude et la latitude. Bagnoli &amp; Lucchi (2001) signalent ainsi qu’en Toscane, on rencontre fréquemment des niveaux de populations très élevés dans les vignobles côtiers du sud de la région, mais que l’espèce est quasi-absente par ailleurs. Le premier vol a lieu en mai ou juin, il peut être suivi de trois autres périodes de vol en juillet, août-septembre et en octobre-novembre. On a observé jusqu’à 7 générations sur des raisins et des agrumes en Israël. (Avidov et Harpaz 1969 cité dans Ioriatti et al 2012). Dans les régions viticoles du nord-est du Brésil, où les conditions climatiques permettent deux récoltes annuelles, <em>C. gnidiella</em> peut avoir jusqu’à neuf générations par an (Bisotto-de-Oliveira et al.&nbsp;2007). <em>C. gnidiella</em> passe l’hiver au stade larvaire et se nymphose au début du printemps dans un cocon soyeux de couleur blanchâtre (Lucchi et al.&nbsp;2019). Le seuil de température minimale requis pour passer du stade œuf au stade adulte a été estimé par Ringenberg et al.&nbsp;(2005) à 12,26 °C et 569,91 degrés-jours. En se basant sur ces valeurs, Öztürk (2018) a calculé que l’installation des pièges à phéromones peut être calée sur les dates auxquelles on atteint 80 degrés-jours. De la même manière, on peut prévoir l’éclosion des œufs lorsque le seuil des 250 degrés-jours est atteint tandis qu’il faut arriver à 800, 1375, 1930 et 2500 degrés-jours pour la seconde, troisième, quatrième et cinquième génération. Il faut garder à l’esprit que ces données concernent des populations se développant dans une plantation de grenade dans la province turque de Mersin et que les seuils valables pour des populations de l’ouest du bassin méditerranéen pourraient être différents. Vidart et al.&nbsp;(2013) réalisent le même type d’analyse en Uruguay et considèrent que les modèles logistiques obtenus constituent des outils acceptables pour gérer les populations de ce ravageur.
+</p>
+</section>
+<section id="distribution-géographique" class="level1">
+<h1>Distribution géographique</h1>
+<p>
+Nous l’avons vu plus haut, <em>C. gnidiella</em> est distribuée sur le pourtour méditerranéen ainsi que dans plusieurs pays au climat relativement semblable. Pour autant, les données d’occurrence disponibles dans la littérature et dans les bases de données telles que GBIF sont relativement peu nombreuses. Les données d’occurrences correspondent à des localités où l’espèce étudiée se maintient sous la forme d’une population viable (point de présence) ou, au contraire, ne peut pas se maintenir car les conditions ne sont pas favorables (point d’absence). Dans certains cas, on observe l’espèce, mais elle ne se reproduit pas et on parle alors de populations transitoires. Lorsque l’on construit des modèles statistiques reliant le climat aux points de présence, il est très important d’écarter les populations transitoires des calculs de façon à ne considérer que les cas où le climat permet la survie de l’espèce. De tels modèles sont appelés modèles d’aire de distribution ou modèles de niche écologique.
+</p>
+<p>
+L’un des objectifs du projet Cryptovigne est d’établir un modèle d’aire de distribution pour <em>C. gnidiella</em>. Un modèle de ce type a été publié récemment (Zumbado-Ulate et al.&nbsp;2023) et nous reproduisons ci-dessous la carte obtenue par ces auteurs (Figure 2). On observe que les occurrences européennes sont rares et que leur distribution est étrange : les points situés en Angleterre et en Belgique posent problème ! En effet, <em>C. gnidiella</em> est parfois observée dans ces pays, mais n’y constitue jamais de populations viables. Ceci est bien documenté pour la Belgique dans Meert (2020) et Dawidowicz et Rozwałka (2016) fournissent un autre exemple dans le cas de la Pologne. Le climat des régions du nord de l’Europe est défavorable et les observations qui y sont réalisées, quoique valides d’un point de vue taxonomique, ne doivent pas être retenues pour le travail de modélisation. La figure 2 représente la favorabilité du climat estimée par le modèle de Zumbado-Ulate et ses collègues. On s’attend à ce que cet indice soit élevé autour du bassin méditerranéen, mais ce n’est pas le cas ce qui indique que le modèle produit des projections très éloignées des connaissances dont nous disposons. Le problème peut s’expliquer de plusieurs façons, notamment par l’utilisation des populations transitoires lors des calculs. En tout état de cause, il est indispensable de faire un nouveau modèle et pour cela, il nous faut rassembler le plus grand nombre d’observations possible. Le projet Cryptovigne permettra de recueillir ces données pour la France et nous y ajouterons les informations collectées ailleurs dans le monde. Ce travail a débuté et les premiers résultats sont exposés dans le paragraphe suivant.
+</p>
+<div class="imageflottanteC" style="height=535px ; width=450px;border:thin solid white">
+<center>
+<img src="cryptovigne/suitability.png" title="SDM Cryptoblabes gnidiella" alt="SDM Cryptoblabes gnidiella" width="600" style="padding:1px;border:thin solid white">
+</center>
+<p><br> <span class="legen"><strong>Figure 2.</strong> Occurrences connues et favorabilité climatique pour <em>Cryptoblabes gnidiella</em>. Reproduit de Zumbado-Ulate et al.&nbsp;(2023) figure S6.</span></p>
+</div>
+</section>
+<section id="compilation-des-données-doccurences" class="level1">
+<h1>Compilation des données d’occurences</h1>
+<p>
+Nous avons interrogé la base de données GBIF et extrait les données concernant <em>C. gnidiella</em> (GBIF Occurrence Download 2024). Certains pays dans lesquels l’espèce est signalée ne sont pas représentés dans GBIF (par exemple la Turquie ou l’Egypte) et il faut donc rechercher les informations disponibles dans la littérature. Les références bibliographiques compilées à cette occasion sont listées plus bas et le résultat de ces recherches est représenté sous la forme de la carte ci-dessous.
+</p>
+<div class="imageflottanteC" style="height=535px ; width=450px;border:thin solid white">
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-7e57645ca75ef602b77f" style="width:100%;height:650px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7e57645ca75ef602b77f">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[50,15],4,[]],"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addProviderTiles","args":["OpenTopoMap",null,"OpenTopoMap",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addAwesomeMarkers","args":[[42.45422748248177,38.797306,28.728155,42.657,35.347,38.666265,38.494266,38.948467,38.494316,38.948607,38.948512,39.877268,36.748975,39.49808,40.938803,35.272992,28.642093,41.82555,42.8371,43.5889,43.10346,43.49853,28.40876,37.19721,40.102,35.272992,28.50432,28.50433,41.82555,37.011886,37.011885,43.455036,43.137376,37.828347,42.775528,43.511985,38.666306,37.03361,43.464825,38.954718,40.278827,37.179967,43.455036,37.032248,36.825835,39.64586,43.455036,43.455036,43.455036,39.940135,28.388392,43.455036,43.455036,43.137376,37.828296,39.795558,38.666339,43.455036,42.353366,42.770322,43.44882,43.455036,41.825553,41.202318,41.82555,39.897441,43.455036,43.137376,43.455036,43.455036,37.144345,37.143935,43.180122,43.455036,43.180191,43.455036,43.455036,41.252529,43.455036,43.455036,43.735123,43.194248,43.455036,43.455036,42.775528,41.825553,41.82555,43.455036,41.82555,43.455036,43.180122,39.64586,37.746449,37.746449,43.66395,43.6722,43.82311,42.44439,37.98,38.1402,37.849,28.391848,44.25017,43.635117,43.03959,37.03271,41.93473,43.55204,43.55204,35.475072,38.025016,37.990186,38.025016,37.990186,37.32652,37.03326,38.07359,40.16401,37.61553,37.14966,40.10976,37.15025,37.19041,39.59661,37.19041,40.17176,37.19041,40.13721,37.15025,37.2057,37.18137,37.19041,37.29846,35.338735,44.899391,42.05,42.46,42.84,28.429412,28.429393,32.636294,32.636294,32.636294,32.636294,32.636294,41.70222,28.657183,28.657183,28.657183,28.657183,28.657183,28.657183,28.657183,28.657183,28.657183,28.657183,28.657183,28.657183,28.657183,28.657183,28.657183,28.657183,28.657183,28.657183,28.657183,28.657183,42.58725,42.58725,43.5042,43.8281,32.636294,32.636294,32.636294,32.636294,32.636294,28.245278,28.211727,37.79718,37.79725,37.81056,37.80619,37.79711,37.80162,37.80162,37.81493,37.79718,37.81056,37.80175,37.8107,37.81527,37.81527,37.80626,37.81076,37.8117,37.81513,37.81049,37.81063,37.80612,37.79711,37.80612,37.80175,37.8107,37.79725,37.81042,37.81049,37.8165,37.815,37.81493,37.80626,37.80168,37.81042,37.80619,37.81076,37.81063,37.80168,38.1566],[11.247556590505,-27.258492,-13.863352,9.077999999999999,24.187,-9.236464,-0.270808,-0.575344,-0.272911,-0.575249,-0.575688,-0.505991,-3.518036,-0.340072,0.852338,25.148906,-17.896862,12.398121,2.9155,3.91911,3.0818,6.9298,-16.508947,-8.906948999999999,-8.808,25.148906,-16.230282,-16.230266,12.398121,-8.934112000000001,-8.934075,3.755127,3.054414,-25.679114,11.093824,3.883794,-9.236424,-7.822628,3.703788,1.513716,-8.525805999999999,-8.457235000000001,3.755127,-7.815525,-2.429378,3.43021,3.755127,3.755127,3.755127,3.957016,-16.571577,3.755127,3.755127,3.054414,-25.679082,-8.890654,-9.236423,3.755127,3.111134,2.89572,4.662152,3.755127,12.398121,16.589261,12.398121,-5.779695,3.755127,3.054414,3.755127,3.755127,-8.608349,-8.607620000000001,6.607356,3.755127,6.607334,3.755127,3.755127,13.449148,3.755127,3.755127,4.169733,6.55482,3.755127,3.755127,11.093824,12.398121,12.398121,3.755127,12.398121,3.755127,6.607329,3.43021,-25.668543,-25.668551,7.13715,7.1524,6.07703,3.14778,-0.67,22.3803,21.107,-16.526088,3.65371,6.931531,2.98118,-7.817734,8.700939999999999,7.00479,7.00479,23.934283,-0.658386,-0.673908,-0.658386,-0.673908,-7.61168,-8.03303,-8.79477,-8.718159999999999,-7.66297,-7.94147,-8.64798,-8.009029999999999,-8.90986,-8.83694,-8.90986,-8.389279999999999,-8.90986,-8.835649999999999,-8.009029999999999,-8.888199999999999,-8.87607,-8.90986,-8.80818,25.144213,9.2629,8.75,8.68,9.48,-16.49647,-16.496463,-16.941988,-16.941988,-16.941988,-16.941988,-16.941988,9.334440000000001,-17.776276,-17.776276,-17.776276,-17.776276,-17.776276,-17.776276,-17.776276,-17.776276,-17.776276,-17.776276,-17.776276,-17.776276,-17.776276,-17.776276,-17.776276,-17.776276,-17.776276,-17.776276,-17.776276,-17.776276,3.04052,3.04052,4.46441,6.08298,-16.941988,-16.941988,-16.941988,-16.941988,-16.941988,-16.838889,-16.811837,-25.58872,-25.5944,-25.57711,-25.58855,-25.58305,-25.58296,-25.58296,-25.56566,-25.58872,-25.57711,-25.59432,-25.58847,-25.59406,-25.59406,-25.59423,-25.59414,-25.5818,-25.5827,-25.57143,-25.58279,-25.58287,-25.58305,-25.58287,-25.59432,-25.58847,-25.5944,-25.56575,-25.57143,-25.5957,-25.57134,-25.56566,-25.59423,-25.58864,-25.56575,-25.58855,-25.59414,-25.58279,-25.58864,-0.6435999999999999],{"icon":"times","markerColor":"lightgreen","iconColor":"black","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","prefix":"fa"},null,"Europe stable",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,["Italy 1996 Cryptoblabes gnidiella biblio 9 # 9","Portugal 2021 Cryptoblabes gnidiella Millière, 1867 gbif-refined cdb6085f-0af3-462b-8feb-1a3fd975dbe9 # 37","Spain 2024 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/234828197 # 38","France NA BOLD:AAW5129 gbif-refined LPRCL1590-22 # 50","Greece 2022 BOLD:AAW5129 gbif-refined LPALE3082-23 # 52","Portugal 2024 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/227257043 # 54","Spain 2011 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://observation.org/observation/303170320 # 55","Spain 2018 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://observation.org/observation/304068763 # 56","Spain 2011 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://observation.org/observation/303196910 # 57","Spain 2018 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://observation.org/observation/304019029 # 58","Spain 2010 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://observation.org/observation/303142110 # 59","Spain 2011 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://observation.org/observation/303203106 # 60","Spain 2016 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://observation.org/observation/303863637 # 61","Spain 2020 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://observation.org/observation/304187133 # 62","Spain 2012 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://observation.org/observation/303228345 # 63","Greece 2024 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/219402606 # 64","Spain 2024 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/205120780 # 65","Italy 2023 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/182110983 # 66","France 2020 Cryptoblabes gnidiella Millière, 1867 gbif-refined a26929f4-0b09-4b8e-85dd-5f4b5867eb0a # 67","France 2021 Cryptoblabes gnidiella Millière, 1867 gbif-refined cf5379a3-4286-44bf-b887-e705eee39f2b # 68","France 2019 Cryptoblabes gnidiella Millière, 1867 gbif-refined d3f896bd-3362-4a6f-8bd9-bf176f92bbfb # 69","France 2023 Cryptoblabes gnidiella Millière, 1867 gbif-refined 0B715843-6718-CFF2-E063-0514A8C06EEA # 71","Spain 2024 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/199212569 # 72","Portugal 2018 BOLD:AAW5129 gbif-refined IBILP1525-19 # 73","Portugal 2019 BOLD:AAW5129 gbif-refined IBILP2890-20 # 74","Greece 2023 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/190597059 # 75","Spain 2019 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/192222554 # 76","Spain 2019 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/192217872 # 77","Italy 2023 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/162248421 # 78","Portugal 2020 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/64858277 # 79","Portugal 2021 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/102871259 # 80","France 2020 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/106435538 # 81","France 2021 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/160784253 # 82","Portugal 2023 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/176811997 # 83","Italy 2013 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/147833292 # 84","France 2011 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/137560201 # 85","Portugal 2023 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/181543131 # 86","Portugal 2022 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/107343829 # 87","France 2019 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/107331147 # 88","Spain 2022 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/139905195 # 89","Portugal 2022 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/137719891 # 90","Portugal 2022 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/126928137 # 91","France 2020 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/106396477 # 92","Portugal 2022 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/108095901 # 93","Spain 2023 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/156125718 # 94","Spain 2021 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/147844473 # 95","France 2018 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/105982569 # 96","France 2018 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/105916323 # 97","France 2017 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/105838312 # 98","Spain 2023 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/170480622 # 99","Spain 2023 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/148326846 # 100","France 2017 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/105843376 # 101","France 2018 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/106077578 # 102","France 2020 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/115832884 # 103","Portugal 2023 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/176815580 # 104","Portugal 2023 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/178614923 # 105","Portugal 2023 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/159606382 # 106","France 2021 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/131453789 # 107","Spain 2022 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/119714849 # 108","France 2021 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/79126280 # 109","France 2014 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/107882104 # 110","France 2018 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/105981458 # 111","Italy 2022 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/140338501 # 112","Italy 2021 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/98599721 # 113","Italy 2020 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/147508838 # 114","Spain 2021 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/100221740 # 115","France 2018 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/105919044 # 116","France 2020 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/115832910 # 117","France 2018 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/106075960 # 118","France 2021 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/110775182 # 120","Portugal 2023 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/150721833 # 121","Portugal 2023 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/172123633 # 122","France 2022 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/139804133 # 123","France 2017 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/105834512 # 125","France 2022 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/112946195 # 126","France 2017 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/105839741 # 127","France 2017 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/105834494 # 128","Italy 2023 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/168108927 # 129","France 2017 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/105850443 # 130","France 2017 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/105786874 # 131","France 2022 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/139781302 # 132","France 2022 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/139803446 # 133","France 2017 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/105844466 # 134","France 2021 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/148847672 # 135","Italy 2014 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/147833495 # 136","Italy 2022 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/136218899 # 138","Italy 2022 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/133268392 # 139","France 2020 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/106484201 # 140","Italy 2023 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/170731737 # 141","France 2017 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/105838304 # 142","France 2022 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/139727419 # 143","Spain 2021 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/147786878 # 144","Portugal 2023 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/179564071 # 145","Portugal 2023 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/179236406 # 146","France 2019 Cryptoblabes gnidiella Millière, 1867 gbif-refined fe4f8694-c890-4579-8eee-e13b5430d52e # 147","France 2019 Cryptoblabes gnidiella Millière, 1867 gbif-refined ddf92f7b-b3dc-4458-a168-9483eb778ced # 148","France 1998 Cryptoblabes gnidiella Millière, 1867 gbif-refined baa6d6cc-cda7-4243-9f51-3c10af69d192 # 149","France 1991 Cryptoblabes gnidiella Millière, 1867 gbif-refined EA95A4DC-D84A-4691-E053-0514A8C0991E # 150","Spain 2016 Cryptoblabes gnidiella Millière, 1867 gbif-refined BDBCV:BDBCV-General:1991681 # 151","Greece 2020 BOLD:AAW5129 gbif-refined LEASW1453-20 # 152","Greece 2019 BOLD:AAW5129 gbif-refined LEASV593-19 # 153","Spain 2022 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/141706339 # 154","France 1905 Cryptoblabes gnidiella Millière, 1867 gbif-refined 586a0814-ee8d-4bca-81ce-5e0ca4d3eb85 # 158","France 2021 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/82648652 # 160","France 2021 Cryptoblabes gnidiella Millière, 1867 gbif-refined 424b4ac6-9b40-4dff-be4a-7360316d5d55 # 161","Portugal 2022 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/108134342 # 163","France 1990 Cryptoblabes gnidiella Millière, 1867 gbif-refined 304CEA74-2F96-0593-E053-2614A8C02206 # 164","France NA Cryptoblabes gnidiella Millière, 1867 gbif-refined C43C5D05-2911-3D18-E053-0514A8C09DBA # 165","France 1867 Cryptoblabes gnidiella Millière, 1867 gbif-refined 97388BA4-9539-3C74-E053-5014A8C0D15E # 166","Greece 2021 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/103006780 # 167","Spain 2018 Cryptoblabes gnidiella Millière, 1867 gbif-refined http://tun.fi/JX.1104822#34 # 168","Spain 2018 Cryptoblabes gnidiella Millière, 1867 gbif-refined http://tun.fi/JX.1103213#25 # 169","Spain 2018 Cryptoblabes gnidiella Millière, 1867 gbif-refined http://tun.fi/JX.1104722#55 # 170","Spain 2018 Cryptoblabes gnidiella Millière, 1867 gbif-refined http://tun.fi/JX.1103220#13 # 171","Portugal 2001 Cryptoblabes gnidiella Millière, 1867 gbif-refined 1e0e7abb-b577-41f8-b1eb-df384b7a3b87 # 178","Portugal 1999 Cryptoblabes gnidiella Millière, 1867 gbif-refined 8de123e2-cf27-4e85-803d-b6b0f57927ed # 179","Portugal 1997 Cryptoblabes gnidiella Millière, 1867 gbif-refined 70126ff5-44dc-48df-a63d-14cf9a96b72d # 180","Portugal 2005 Cryptoblabes gnidiella Millière, 1867 gbif-refined bc085a72-6aba-41eb-8793-abeca053de27 # 181","Portugal 2018 Cryptoblabes gnidiella Millière, 1867 gbif-refined e5455072-2632-4090-b0e0-869c8be7f5ed # 182","Portugal 2001 Cryptoblabes gnidiella Millière, 1867 gbif-refined 35ab2976-212c-470c-9b80-352f285cf6f9 # 183","Portugal 2004 Cryptoblabes gnidiella Millière, 1867 gbif-refined 718683cf-6003-421d-baec-d0f08861e89e # 184","Portugal 1998 Cryptoblabes gnidiella Millière, 1867 gbif-refined e290d16b-aaab-44ec-8f0a-4bb6f9f0ce29 # 186","Portugal 1993 Cryptoblabes gnidiella Millière, 1867 gbif-refined 90964799-ef53-4b7d-aa20-d6cc7f4286a7 # 187","Portugal 2008 Cryptoblabes gnidiella Millière, 1867 gbif-refined f3a12bd7-d176-4e85-b2a4-3b10bf0aebbe # 188","Portugal 1999 Cryptoblabes gnidiella Millière, 1867 gbif-refined a6c9c804-6d2d-40dc-84a7-a74b7820976b # 189","Portugal 2008 Cryptoblabes gnidiella Millière, 1867 gbif-refined 118df7e4-0b87-4a8d-ad54-09294a32bce8 # 190","Portugal 2018 Cryptoblabes gnidiella Millière, 1867 gbif-refined 4114cbb5-2275-4888-a545-131376a7cfe0 # 191","Portugal 2014 Cryptoblabes gnidiella Millière, 1867 gbif-refined 414c0432-06a2-490e-916d-1c0468a6b142 # 192","Portugal 1990 Cryptoblabes gnidiella Millière, 1867 gbif-refined 667e86a1-bcae-4e81-8748-068d76eb8e2c # 193","Portugal 1996 Cryptoblabes gnidiella Millière, 1867 gbif-refined 9322a8db-e5fa-481a-a459-ace2e0d5f4d3 # 194","Portugal 1999 Cryptoblabes gnidiella Millière, 1867 gbif-refined d34c09a3-81c3-4582-8b8d-7ae0f5f36b27 # 195","Portugal 2010 Cryptoblabes gnidiella Millière, 1867 gbif-refined e3d1c5ff-ab40-4ad1-9cb1-9760e7043e7a # 196","Portugal 2002 Cryptoblabes gnidiella Millière, 1867 gbif-refined a6df1151-e40f-43b3-b92f-b706e9f442f8 # 197","Greece 2021 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/95867782 # 198","Italy 2021 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/88238386 # 199","France 2015 Cryptoblabes gnidiella Millière, 1867 gbif-refined 5AFEC648-7B29-4B8B-BF95-BD334C628453 # 201","France 2015 Cryptoblabes gnidiella Millière, 1867 gbif-refined CEA3F792-E7B9-4989-AAE4-A48DE06A880F # 202","France 2014 Cryptoblabes gnidiella Millière, 1867 gbif-refined 9B7154AC-8D08-4177-81D0-D70DB56F9D0A # 203","Spain 2016 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/63837626 # 204","Spain 2015 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/63032612 # 205","Portugal 2019 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.biodiversity4all.org/observations/30126269 # 210","Portugal 2019 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.biodiversity4all.org/observations/30126266 # 211","Portugal 2019 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.biodiversity4all.org/observations/30126263 # 212","Portugal 2019 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.biodiversity4all.org/observations/30126261 # 213","Portugal 2019 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.biodiversity4all.org/observations/30126259 # 214","France 1996 Cryptoblabes gnidiella Millière, 1867 gbif-refined 304CEA74-30DF-0593-E053-2614A8C02206 # 215","Spain 2019 Cryptoblabes gnidiella Millière, 1867 gbif-refined  # 217","Spain 2020 Cryptoblabes gnidiella Millière, 1867 gbif-refined  # 218","Spain 2019 Cryptoblabes gnidiella Millière, 1867 gbif-refined  # 219","Spain 2019 Cryptoblabes gnidiella Millière, 1867 gbif-refined  # 220","Spain 2019 Cryptoblabes gnidiella Millière, 1867 gbif-refined  # 221","Spain 2019 Cryptoblabes gnidiella Millière, 1867 gbif-refined  # 222","Spain 2019 Cryptoblabes gnidiella Millière, 1867 gbif-refined  # 223","Spain 2020 Cryptoblabes gnidiella Millière, 1867 gbif-refined  # 224","Spain 2020 Cryptoblabes gnidiella Millière, 1867 gbif-refined  # 225","Spain 2019 Cryptoblabes gnidiella Millière, 1867 gbif-refined  # 226","Spain 2019 Cryptoblabes gnidiella Millière, 1867 gbif-refined  # 227","Spain 2019 Cryptoblabes gnidiella Millière, 1867 gbif-refined  # 228","Spain 2019 Cryptoblabes gnidiella Millière, 1867 gbif-refined  # 229","Spain 2020 Cryptoblabes gnidiella Millière, 1867 gbif-refined  # 230","Spain 2020 Cryptoblabes gnidiella Millière, 1867 gbif-refined  # 231","Spain 2020 Cryptoblabes gnidiella Millière, 1867 gbif-refined  # 232","Spain 2019 Cryptoblabes gnidiella Millière, 1867 gbif-refined  # 233","Spain 2019 Cryptoblabes gnidiella Millière, 1867 gbif-refined  # 234","Spain 2019 Cryptoblabes gnidiella Millière, 1867 gbif-refined  # 235","Spain 2019 Cryptoblabes gnidiella Millière, 1867 gbif-refined  # 236","France 1999 Cryptoblabes gnidiella Millière, 1867 gbif-refined f14028ef-ae78-4813-b627-43060b3a5970 # 237","France 1998 Cryptoblabes gnidiella Millière, 1867 gbif-refined 07b56341-ab7e-4139-a2de-dea6f50a1bc2 # 238","France 1992 Cryptoblabes gnidiella Millière, 1867 gbif-refined 1eb119bd-b2f3-4b18-91c8-09da1d5838de # 239","France 1998 Cryptoblabes gnidiella Millière, 1867 gbif-refined e4930cd7-7307-47a5-a28b-e8233166151e # 240","Portugal 2019 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/30126259 # 242","Portugal 2019 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/30126266 # 243","Portugal 2019 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/30126263 # 244","Portugal 2019 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/30126269 # 245","Portugal 2019 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/30126261 # 246","Spain 2013 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/21112166 # 250","Spain 2017 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/20979177 # 251","Portugal 1997 Cryptoblabes gnidiella Millière, 1867 gbif-refined bac5e4b6-bb7a-11e8-9a78-54da4ae08600 # 252","Portugal 1997 Cryptoblabes gnidiella Millière, 1867 gbif-refined bac5e466-bb7a-11e8-9a78-54da4ae08600 # 253","Portugal 1997 Cryptoblabes gnidiella Millière, 1867 gbif-refined bac5e54c-bb7a-11e8-9a78-54da4ae08600 # 254","Portugal 1997 Cryptoblabes gnidiella Millière, 1867 gbif-refined bac5e506-bb7a-11e8-9a78-54da4ae08600 # 255","Portugal 1998 Cryptoblabes gnidiella Millière, 1867 gbif-refined b991d12c-bb7a-11e8-9a78-54da4ae08600 # 256","Portugal 1997 Cryptoblabes gnidiella Millière, 1867 gbif-refined b991d2f8-bb7a-11e8-9a78-54da4ae08600 # 257","Portugal 1998 Cryptoblabes gnidiella Millière, 1867 gbif-refined b991d28a-bb7a-11e8-9a78-54da4ae08600 # 258","Portugal 1997 Cryptoblabes gnidiella Millière, 1867 gbif-refined b991d51e-bb7a-11e8-9a78-54da4ae08600 # 259","Portugal 1998 Cryptoblabes gnidiella Millière, 1867 gbif-refined b991d0dc-bb7a-11e8-9a78-54da4ae08600 # 260","Portugal 1998 Cryptoblabes gnidiella Millière, 1867 gbif-refined b991d442-bb7a-11e8-9a78-54da4ae08600 # 261","Portugal 1997 Cryptoblabes gnidiella Millière, 1867 gbif-refined b991d17c-bb7a-11e8-9a78-54da4ae08600 # 262","Portugal 1997 Cryptoblabes gnidiella Millière, 1867 gbif-refined b991d3fc-bb7a-11e8-9a78-54da4ae08600 # 263","Portugal 1998 Cryptoblabes gnidiella Millière, 1867 gbif-refined b991d4d8-bb7a-11e8-9a78-54da4ae08600 # 264","Portugal 1997 Cryptoblabes gnidiella Millière, 1867 gbif-refined b991d488-bb7a-11e8-9a78-54da4ae08600 # 265","Portugal 1998 Cryptoblabes gnidiella Millière, 1867 gbif-refined b991d352-bb7a-11e8-9a78-54da4ae08600 # 266","Portugal 1998 Cryptoblabes gnidiella Millière, 1867 gbif-refined b991d3ac-bb7a-11e8-9a78-54da4ae08600 # 267","Portugal 1998 Cryptoblabes gnidiella Millière, 1867 gbif-refined b8940cd6-bb7a-11e8-9a78-54da4ae08600 # 270","Portugal 1997 Cryptoblabes gnidiella Millière, 1867 gbif-refined b8940bb4-bb7a-11e8-9a78-54da4ae08600 # 271","Portugal 1998 Cryptoblabes gnidiella Millière, 1867 gbif-refined b85efbf4-bb7a-11e8-9a78-54da4ae08600 # 272","Portugal 1998 Cryptoblabes gnidiella Millière, 1867 gbif-refined b85efba4-bb7a-11e8-9a78-54da4ae08600 # 273","Portugal 1997 Cryptoblabes gnidiella Millière, 1867 gbif-refined b85efab4-bb7a-11e8-9a78-54da4ae08600 # 274","Portugal 1997 Cryptoblabes gnidiella Millière, 1867 gbif-refined b85ef9ec-bb7a-11e8-9a78-54da4ae08600 # 275","Portugal 1998 Cryptoblabes gnidiella Millière, 1867 gbif-refined b85efb0e-bb7a-11e8-9a78-54da4ae08600 # 276","Portugal 1998 Cryptoblabes gnidiella Millière, 1867 gbif-refined b85efa5a-bb7a-11e8-9a78-54da4ae08600 # 277","Portugal 1998 Cryptoblabes gnidiella Millière, 1867 gbif-refined b85efb5e-bb7a-11e8-9a78-54da4ae08600 # 278","Portugal 1998 Cryptoblabes gnidiella Millière, 1867 gbif-refined b85ef8d4-bb7a-11e8-9a78-54da4ae08600 # 280","Portugal 1998 Cryptoblabes gnidiella Millière, 1867 gbif-refined b85efc8a-bb7a-11e8-9a78-54da4ae08600 # 281","Portugal 1997 Cryptoblabes gnidiella Millière, 1867 gbif-refined b85efc3a-bb7a-11e8-9a78-54da4ae08600 # 282","Portugal 1998 Cryptoblabes gnidiella Millière, 1867 gbif-refined b7382214-bb7a-11e8-9a78-54da4ae08600 # 285","Portugal 1997 Cryptoblabes gnidiella Millière, 1867 gbif-refined b73821ce-bb7a-11e8-9a78-54da4ae08600 # 288","Portugal 1998 Cryptoblabes gnidiella Millière, 1867 gbif-refined b7382264-bb7a-11e8-9a78-54da4ae08600 # 289","Portugal 1997 Cryptoblabes gnidiella Millière, 1867 gbif-refined b7381f80-bb7a-11e8-9a78-54da4ae08600 # 291","Portugal 1998 Cryptoblabes gnidiella Millière, 1867 gbif-refined b7381f1c-bb7a-11e8-9a78-54da4ae08600 # 292","Portugal 1997 Cryptoblabes gnidiella Millière, 1867 gbif-refined b73820a2-bb7a-11e8-9a78-54da4ae08600 # 293","Portugal 1998 Cryptoblabes gnidiella Millière, 1867 gbif-refined b7381fc6-bb7a-11e8-9a78-54da4ae08600 # 294","Portugal 1997 Cryptoblabes gnidiella Millière, 1867 gbif-refined b7382016-bb7a-11e8-9a78-54da4ae08600 # 295","Portugal 1997 Cryptoblabes gnidiella Millière, 1867 gbif-refined b738205c-bb7a-11e8-9a78-54da4ae08600 # 296","Portugal 1997 Cryptoblabes gnidiella Millière, 1867 gbif-refined b7381ec2-bb7a-11e8-9a78-54da4ae08600 # 297","Spain 2003 BOLD:AAW5129 gbif-refined PMANL876-11 # 299"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addAwesomeMarkers","args":[[51.2319444444444,51.2297222222222,51.2366666666667,51.2325,52.1797222222222,52.1783333333333,50.7086111111111,53.230469,51.0548,51.357893,51.1468,50.9818,50.04493,50.9818,50.96964],[22.6116666666667,22.5977777777778,22.6044444444444,22.5986111111111,21.0041666666667,21.0133333333333,23.285,10.39319,3.77526,-2.927715,4.10059,4.09478,4.3318,4.09537,3.11878],{"icon":"times","markerColor":"blue","iconColor":"black","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","prefix":"fa"},null,"Europe transitoire",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,["Poland 2014 Cryptoblabes gnidiella biblio 10 # 10","Poland 2014 Cryptoblabes gnidiella biblio 11 # 11","Poland 2014 Cryptoblabes gnidiella biblio 12 # 12","Poland 2014 Cryptoblabes gnidiella biblio 13 # 13","Poland 2014 Cryptoblabes gnidiella biblio 14 # 14","Poland 2014 Cryptoblabes gnidiella biblio 15 # 15","Poland 2014 Cryptoblabes gnidiella biblio 16 # 16","Germany 2024 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://observation.org/observation/297091676 # 36","Belgium 2021 Cryptoblabes gnidiella Millière, 1867 gbif-refined Natuurpunt:Waarnemingen:205227907 # 200","United Kingdom 2002 Cryptoblabes gnidiella Millière, 1867 gbif-refined 856246 # 209","Belgium 2020 Cryptoblabes gnidiella Millière, 1867 gbif-refined Natuurpunt:Waarnemingen:186765367 # 216","Belgium 2019 Cryptoblabes gnidiella Millière, 1867 gbif-refined Natuurpunt:Waarnemingen:182579108 # 241","Belgium 2018 Cryptoblabes gnidiella Millière, 1867 gbif-refined Natagora:Observations:163171438 # 247","Belgium 2018 Cryptoblabes gnidiella Millière, 1867 gbif-refined Natuurpunt:Waarnemingen:163121842 # 248","Belgium 2018 Cryptoblabes gnidiella Millière, 1867 gbif-refined Natuurpunt:Waarnemingen:163530612 # 249"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addAwesomeMarkers","args":[[-29.1666666666667,-9.079444444444441,-34.5666666666667,-34.62188888669925,-34.67003807164922,19.8944011487542,19.5344545339533,19.5945285247271,19.8070262162829,22.2145221901662,32.269556,32.269552,32.292713,32.2929],[-51.5333333333333,-40.1388888888889,-56.25,-56.22104763388313,-56.20514811971822,-155.126906737734,-155.931787186633,-155.06369142756,-155.097017928175,-159.400882993814,-64.79940000000001,-64.79939299999999,-64.76257,-64.7632],{"icon":"times","markerColor":"red","iconColor":"black","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","prefix":"fa"},null,"Amerique stable",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,["Brazil 2004 Cryptoblabes gnidiella biblio 1 # 1","Brazil 2010 Cryptoblabes gnidiella biblio 2 # 2","Uruguay 2010 Cryptoblabes gnidiella biblio 27 # 27","Uruguay 2003 Cryptoblabes gnidiella biblio 28 # 28","Uruguay 2003 Cryptoblabes gnidiella biblio 29 # 29","USA Hawaii 1994 Cryptoblabes gnidiella biblio 30 # 30","USA Hawaii 1994 Cryptoblabes gnidiella biblio 31 # 31","USA Hawaii 1994 Cryptoblabes gnidiella biblio 32 # 32","USA Hawaii 1994 Cryptoblabes gnidiella biblio 33 # 33","USA Hawaii 1994 Cryptoblabes gnidiella biblio 34 # 34","Bermuda 2022 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/128407457 # 155","Bermuda 2022 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/128043489 # 156","Bermuda 2022 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/112204426 # 157","Bermuda 1987 BOLD:AAW5129 gbif-refined PMANL2830-14 # 300"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addAwesomeMarkers","args":[[26.64148011073123,30.31212174616967,31.24728042669958,30.76378856312516,28.4140115328772,27.71699456848899,-17.9307,6.21,-33.984,-2.189,-25.443,-17.9307,-2.253,-25.443,6.21,-25.446,-25.446,-33.988,-33.984,-21.13317,17.162119,17.162125,-21.13317,-21.13317,-25.123,-24.983,-24.103,-25.123,-25.123,-25.123,-0.16524,-0.16524,-0.16524,-0.16844,-14.082,-28.839,31.204,31.204,-1.24,-3.3,-4.334,0.236,-4.325],[31.60412868542246,31.33341471162788,31.53973366458254,29.02493189096472,30.77382972323261,30.84417258996236,49.203316,0.438,18.435,34.724,30.972,49.203316,33.821,30.972,0.438,30.968,30.968,18.428,18.435,55.53241,-25.120479,-25.120474,55.53241,55.53241,31.916,31.58,31.669,31.916,31.916,31.916,11.617,11.617,11.617,11.5866,48.366,31.686,29.9496,29.9496,36.84,39.99,39.564,34.864,39.524],{"icon":"times","markerColor":"orange","iconColor":"black","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","prefix":"fa"},null,"Afrique stable",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,["Egypt 2019 Cryptoblabes gnidiella biblio 3 # 3","Egypt 1997 Cryptoblabes gnidiella biblio 4 # 4","Egypt 2017 Cryptoblabes gnidiella biblio 5 # 5","Egypt 2015 Cryptoblabes gnidiella biblio 6 # 6","Egypt 2006 Cryptoblabes gnidiella biblio 7 # 7","Egypt 2006 Cryptoblabes gnidiella biblio 8 # 8","Madagascar 2017 BOLD:AAW5129 gbif-refined BETAM767-17 # 39","Ghana 2019 BOLD:AAW5129 gbif-refined TMGHA9403-22 # 40","South Africa 2022 BOLD:AAW5129 gbif-refined SAKBB6237-23 # 41","Tanzania 2020 BOLD:AAW5129 gbif-refined TSMTF6781-23 # 42","South Africa 2022 BOLD:AAW5129 gbif-refined SALVB4848-23 # 43","Madagascar 2017 BOLD:AAW5129 gbif-refined BETAM914-17 # 44","Tanzania 2020 BOLD:AAW5129 gbif-refined TSMTE10602-23 # 45","South Africa 2023 BOLD:AAW5129 gbif-refined SALVB4959-23 # 46","Ghana 2019 BOLD:AAW5129 gbif-refined TMGHA9376-22 # 47","South Africa 2022 BOLD:AAW5129 gbif-refined SALVA6075-23 # 48","South Africa 2022 BOLD:AAW5129 gbif-refined SALVA7625-23 # 49","South Africa 2022 BOLD:AAW5129 gbif-refined SAKBA8389-23 # 51","South Africa 2022 BOLD:AAW5129 gbif-refined SAKBB028-22 # 53","Réunion NA Cryptoblabes gnidiella Millière, 1867 gbif-refined 723aec64-efab-40bd-a836-63eb07febb17 # 70","Cabo Verde 2023 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/149465747 # 124","Cabo Verde 2023 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/149475054 # 137","Réunion NA Cryptoblabes gnidiella Millière, 1867 gbif-refined 231b06a3-f89a-424a-8403-16938f3bc345 # 159","Réunion NA Cryptoblabes gnidiella Millière, 1867 gbif-refined 6c356ddc-7e43-4f79-851d-2bc52d400554 # 162","South Africa 2018 BOLD:AAW5129 gbif-refined KMPAC5354-18 # 172","South Africa 2019 BOLD:AAW5129 gbif-refined KMPVY007-19 # 173","South Africa 2018 BOLD:AAW5129 gbif-refined KMPGQ440-19 # 174","South Africa 2019 BOLD:AAW5129 gbif-refined KMPAN197-19 # 175","South Africa 2019 BOLD:AAW5129 gbif-refined KMPAN246-19 # 176","South Africa 2019 BOLD:AAW5129 gbif-refined KMPAN251-19 # 177","Gabon 2014 BOLD:AAW5129 gbif-refined GMGGB871-17 # 206","Gabon 2014 BOLD:AAW5129 gbif-refined GMGGE153-17 # 207","Gabon 2014 BOLD:AAW5129 gbif-refined GMGGB886-17 # 208","Gabon 2014 BOLD:AAW5129 gbif-refined MOGAG050-14 # 301","Madagascar 2011 BOLD:AAW5129 gbif-refined MADAM038-15 # 302","South Africa 2013 BOLD:AAW5129 gbif-refined GWOTO298-15 # 303","Egypt 2013 BOLD:AAW5129 gbif-refined GMESP007-14 # 304","Egypt 2013 BOLD:AAW5129 gbif-refined GMESG252-14 # 305","Kenya 2004 BOLD:AAW5129 gbif-refined EPNG3890-11 # 306","Kenya 2004 BOLD:AAW5129 gbif-refined EPNG3886-11 # 307","Kenya 1999 BOLD:AAW5129 gbif-refined AFRM182-14 # 308","Kenya 2000 BOLD:AAW5129 gbif-refined AFRM002-12 # 309","Kenya 2003 BOLD:AAW5129 gbif-refined AFMIC129-12 # 310"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addAwesomeMarkers","args":[[37.8880196,37.381666,36.63321007619966,36.8099614,36.8204952,36.96169336114355,37.02528516135073,37.27003292119581,36.84990927642233,36.88231229749647,32.084528,32.766945],[35.7377206,35.8544008,34.34389060930184,34.6149862,34.4346486,35.33494711387191,35.37661855558495,35.27364593237355,34.74721464438118,34.87656543579328,34.839427,35.152549],{"icon":"times","markerColor":"purple","iconColor":"black","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","prefix":"fa"},null,"Asie stable",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,["Turkey 2010 Cryptoblabes gnidiella biblio 17 # 17","Turkey 2010 Cryptoblabes gnidiella biblio 18 # 18","Turkey 2010 Cryptoblabes gnidiella biblio 19 # 19","Turkey 2010 Cryptoblabes gnidiella biblio 20 # 20","Turkey 2010 Cryptoblabes gnidiella biblio 21 # 21","Turkey 2017 Cryptoblabes gnidiella biblio 22 # 22","Turkey 2017 Cryptoblabes gnidiella biblio 23 # 23","Turkey 2017 Cryptoblabes gnidiella biblio 24 # 24","Turkey 2017 Cryptoblabes gnidiella biblio 25 # 25","Turkey 2008 Cryptoblabes gnidiella biblio 26 # 26","Israel 2024 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/237184797 # 35","Israel 2023 Cryptoblabes gnidiella Millière, 1867 gbif-refined https://www.inaturalist.org/observations/175359121 # 119"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLegend","args":[{"colors":["purple","orange","red","blue","lightgreen"],"labels":["Asie stable","Afrique stable","Amerique stable","Europe transitoire","Europe stable"],"na_color":null,"na_label":"NA","opacity":0.8,"position":"topright","type":"unknown","title":"Colour code","extra":null,"layerId":null,"className":"info legend","group":null}]},{"method":"addLayersControl","args":[["OpenTopoMap","OpenStreetMap"],["Asie stable","Afrique stable","Amerique stable","Europe transitoire","Europe stable"],{"collapsed":false,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[-34.67003807164922,53.230469],"lng":[-159.400882993814,55.53241]}},"evals":[],"jsHooks":{"render":[{"code":"function(el, x, data) {\n  return (\n    function(el, x) {\n      var map = this;\n      map.on('click', function(e) {\n        var latlng = e.latlng;\n        L.popup()\n          .setLatLng(latlng)\n          .setContent('Coordinates: ' + latlng.lat.toFixed(4) + ', ' + latlng.lng.toFixed(4))\n          .openOn(map);\n      });\n    }\n  ).call(this.getMap(), el, x, data);\n}","data":null}]}}</script>
+</div>
+</div>
+<p><span class="legen"><strong>Figure 3.</strong> Cartographie <span style="border: 1px solid; padding: 2px;">interactive</span> des occurrences disponibles dans la base de données GBIF (GBIF Occurrence Download 2024) et recueillies dans la littérature. Les populations du nord de l’Europe sont considérées comme transitoires.</span></p>
+</div>
+<p>
+</p><p>La littérature disponible pour <em>C. gnidiella</em> est malheureusement assez limitée et de nombreux articles ne fournissent pas d’informations précises sur les localités où l’espèce a été observée. Après examen d’environ 200 publications, on ne dispose que de peu d’informations précises pour l’Asie (Malaisie). On peut prendre connaissance de la source des informations en passant le curseur sur les symboles indiquant la position des observations (Figure 3). Les points indiquant “BOLD” correspondent à des données génétiques de type barcode présentes dans GBIF et communiquées via la base de données BOLD. Cette information est importante, car elle indique des occurrences qui ne sont pas forcément basées sur une observation directe de <em>C. gnidiella</em>.</p>
+En conclusion, on peut souligner la difficulté posée par la petite taille des jeux de données disponibles et l’attention qu’il faudra porter aux populations transitoires ou ne correspondant qu’à un barcode.
+<p></p>
+</section>
+<section id="références-citées" class="level1">
+<h1>Références citées</h1>
+<p>
+</p><p>Bagnoli, B., Lucchi, A., 2001. Bionomics of Cryptoblabes gnidiella (Millière)(Pyralidae Phycitinae) in Tuscan vineyards. IOBC wprs Bulletin 24, 79–84.</p>
+<p>Bisotto-De-Oliveira, R., Redaelli, L.R., Sant’Ana, J., Cover, C., Botton, M., 2007. Ocurrence of Cryptoblabes gnidiella (Milliere) (Lepidoptera: Pyralidae) associated with grape phenology in Bento Goncalves, RS. NEOTROPICAL ENTOMOLOGY 36, 555–559. https://doi.org/10.1590/S1519-566X2007000400013</p>
+<p>Dawidowicz, Ł., Rozwałka, R., 2016. Honeydew Moth Cryptoblabes gnidiella (MILLIÈRE, 1867) (Lepidoptera: Pyralidae): an adventive species frequently imported with fruit to Poland. Polish Journal of Entomology 85, 181–189. https://doi.org/10.1515/pjen-2016-0010</p>
+<p>GBIF Occurrence Download (2024) https://doi.org/10.15468/dl.a4fjk5 Accessed from R via rgbif (https://github.com/ropensci/rgbif) on 2024-09-16”</p>
+<p>Ioriatti, C., Lucchi, A., Varela, L.G., 2012. Grape berry moths in Western European Vineyards and their recent movement into the new world. Grape Berry Moths in Western European Vineyards and Their Recent Movement into the New World. https://doi.org/10.1007/978-94-007-4032-7</p>
+<p>Lucchi, A., Ricciardi, R., Benelli, G., Bagnoli, B., 2019. What do we really know on the harmfulness of Cryptoblabes gnidiella (Milliere) to grapevine? From ecology to pest management. PHYTOPARASITICA 47, 1–15. https://doi.org/10.1007/s12600-018-0705-3</p>
+<p>Meert, R., 2020. Cryptoblabes gnidiella (Lepidoptera: Pyralidae) voor het eerst in België vastgesteld. Phegea 48, 90–93.</p>
+<p>Ozturk, N., 2018. Creating a degree-day model of honeydew moth [Cryptoblabes gnidiella (Mill., 1867) (Lepidoptera: Pyralidae)] in pomegranate orchards. TURKIYE ENTOMOLOJI DERGISI-TURKISH JOURNAL OF ENTOMOLOGY 42, 53–62. https://doi.org/10.16970/entoted.362264</p>
+<p>Vidart, M.V., Mujica, M.V., Calvo, M.V., Duarte, F., Bentancourt, C.M., Franco, J., Scatoni, I.B., 2013. Relationship between male moths of Cryptoblabes gnidiella (Millière) (Lepidoptera: Pyralidae) caught in sex pheromone traps and cumulative degree-days in vineyards in southern Uruguay. SpringerPlus 2, 258. https://doi.org/10.1186/2193-1801-2-258</p>
+Zumbado-Ulate, H., Schartel, T.E., Simmons, G.S., Daugherty, M.P., 2023. Assessing the risk of invasion by a vineyard moth pest guild. NEOBIOTA 86, 169–191. https://doi.org/10.3897/neobiota.86.100579
+<p></p>
+</section>
+<section id="liste-complète-des-publications-compilées-dans-le-cadre-de-cryptovigne" class="level1">
+<h1>Liste complète des publications compilées dans le cadre de Cryptovigne</h1>
+<p>
+</p><ol type="1">
+<li>Abdel Kareim, A., Ragab, M., Ghanim, N., Abd El-Salam, S., 2018. Seasonal Activity, Natural Enemies and Life Table Parameters of Cryptoblabes gnidiella Mill. on Mango Inflorescences. Journal of Plant Protection and Pathology 9, 393–397. https://doi.org/10.21608/jppp.2018.42181</li>
+<li>Abdel-Moaty, R., Hashim, S., Tadros, A., 2017. Monitoring the Honeydew Moth, Cryptoblabes gnidiella Millière (Lepidoptera: Pyralidae) in Pomegranate Orchards in the Northwestern Region of Egypt. Journal of Plant Protection and Pathology 8, 505–509.</li>
+<li>Abouziena, H.F., El-Saeid, H.M., 2013. Developmental changes in growth, yield and volatile oil of some Chinese garlic lines in comparison with the local cultivar “Balady.” Pakistan Journal of Biological Sciences. https://doi.org/10.3923/pjbs.2013.1138.1144</li>
+<li>Afromoths.net [WWW Document], n.d. URL https://www.afromoths.net/ (accessed 9.16.24).</li>
+<li>Ahmed, A.R., Apori, S.O., Karim, A.A., 2023. Mealybug vectors: A review of their transmission of plant viruses and their management strategies. AIMS Agriculture and Food. https://doi.org/10.3934/AGRFOOD.2023040</li>
+<li>Alloui-Griza, R., Cherif, A., Attia, S., Francis, F., Lognay, G.C., Grissa-Lebdi, K., 2022. Lethal Toxicity of Thymus capitatus Essential Oil Against Planococcus citri (Hemiptera: Pseudococcidae) and its Coccinellid Predator Cryptolaemus montrouzieri (Coleoptera: Coccinellidae). Journal of Entomological Science. https://doi.org/10.18474/JES21-81</li>
+<li>ANNEXE 1 1. Descriptif technique 2024 1. Cryptovigne.pdf, n.d.</li>
+<li>Anshelevich, L., Kehat, M., Dunkelblum, E., Greenberg, S., 1994. Sex Pheromone Traps for Monitoring the European Vine Moth, Lobesia botrana: Effect of Dispenser Type, Pheromone Dose, Field Aging of Dispenser, and Type of Trap on Male Captures. Phytoparasitica. https://doi.org/10.1007/BF02980529</li>
+<li>Aranda-Arguello, R., Rojas, J.C., Malo, E.A., López-Guillén, G., Cruz-López, L., 2022. Male attraction of Gymnandrosoma aurantianum (Lepidoptera: Tortricidae), from Guatemala, to its sex pheromone major component is not affected by the addition of secondary components. Canadian Entomologist. https://doi.org/10.4039/tce.2022.37</li>
+<li>Argov, Y., Gerson, U., 2012. Gracillariidae, yponomeutidae and pyralidae. Integrated Control of Citrus Pests in the Mediterranean Region. https://doi.org/10.2174/978160805294311201010223</li>
+<li>ASCHER, K., ELIYAHU, M., GUREVITZ, E., RENNEH, S., 1983. REARING THE HONEYDEW MOTH, CRYPTOBLABES-GNIDIELLA, AND THE EFFECT OF DIFLUBENZURON ON ITS EGGS. PHYTOPARASITICA 11, 195–198. https://doi.org/10.1007/BF02980691</li>
+<li>Avidov, Z., Gothilf, S., 1960. Observations on the honeydew moth (Gryptoblabes gnidiella Milliere) in Israel. I. Biology, phenology and economic importance. Ktavim 10, 109–124.</li>
+<li>Avidov, Z., Harpaz, I., 1969. Plant pests of Israel.</li>
+<li>Bagnoli, B., Lucchi, A., 2001. Bionomics of Cryptoblabes gnidiella (Millière)(Pyralidae Phycitinae) in Tuscan vineyards. IOBC wprs Bulletin 24, 79–84.</li>
+<li>Barker, B., n.d. Forecasting phenology and establishment risk of invasive species to support early detection.</li>
+<li>Bavaresco, A., Nuñez, S., Garcia, M.S., Botton, M., Sant’Ana, J., 2005. Attraction of males of the South American tortricid moth Argyrotaenia sphaleropa (Meyrick) (Lepidoptera: Tortricidae) to the components of the synthetic sexual pheromone in persimmon; [Atração de machos da lagarta-das-fruteiras Argyrotaenia sphaleropa (Meyrick) (Lepidoptera: Tortricidae) aos componentes do feromônio sexual sintético na cultura do caquizeiro]. Neotropical Entomology. https://doi.org/10.1590/S1519-566X2005000400013</li>
+<li>Benelli, G., Lucchi, A., 2021. From insect pheromones to mating disruption: Theory and practice. Insects. https://doi.org/10.3390/insects12080698</li>
+<li>Benelli, G., Lucchi, A., Anfora, G., Bagnoli, B., Botton, M., Campos-Herrera, R., Carlos, C., Daugherty, M.P., Gemeno, C., Harari, A.R., Hoffmann, C., Ioriatti, C., López Plantey, R.J., Reineke, A., Ricciardi, R., Roditakis, E., Simmons, G.S., Tay, W.T., Torres-Vila, L.M., Vontas, J., Thiéry, D., 2023. European grapevine moth, Lobesia botrana Part I: Biology and ecology. Entomologia Generalis. https://doi.org/10.1127/entomologia/2023/1837</li>
+<li>Benelli, G., Lucchi, A., Thomson, D., Ioriatti, C., 2019. Sex pheromone aerosol devices for mating disruption: Challenges for a brighter future. Insects. https://doi.org/10.3390/insects10100308</li>
+<li>BENYEHUDA, S., WYSOKI, M., ROSEN, D., 1993. LABORATORY EVALUATION OF MICROBIAL PESTICIDES AGAINST THE HONEYDEW MOTH. INSECT SCIENCE AND ITS APPLICATION 14, 627–630.</li>
+<li>Bhadauriya, A.P.S., Chauhan, A.K.S., Chandel, B.S., n.d. Studies on the life cycle of Cryptoblabes gnidiella miller (Lepidoptera: Pyralidae) on hybrid sorghum.</li>
+<li>Bisotto-De-Oliveira, R., Redaelli, L.R., Sant’Ana, J., Cover, C., Botton, M., 2007. Ocurrence of Cryptoblabes gnidiella (Milliere) (Lepidoptera: Pyralidae) associated with grape phenology in Bento Goncalves, RS. NEOTROPICAL ENTOMOLOGY 36, 555–559. https://doi.org/10.1590/S1519-566X2007000400013</li>
+<li>Bjostad, L.B., Gurevitz, E., Gothilf, S., Roelofs, W.L., 1981. Sex attractant for the honeydew moth,Cryptoblabes gnidiella. Phytoparasitica 9, 95–99. https://doi.org/10.1007/bf03158451</li>
+<li>Blumberg, D., Navon, A., Keren, S., Goldenberg, S., Ferkovich, S.M., 1997. Interactions among Helicoverpa armigera (Lepidoptere: Noctuidae), Its Larval Endoparasitoid Microplitis croceipes (Hymenoptera: Braconidae), and Bacillus thuringiensis. Journal of Economic Entomology. https://doi.org/10.1093/jee/90.5.1181</li>
+<li>Bodenheimer, F.S., others, 1951. Citrus entomology in the Middle East.</li>
+<li>Chandel, B., Bhadauriya, A., Chauhan, A., 2010. Relative toxicity of certain insecticides against larvae of earhead caterpillar, Cryptoblabes gnidiella Milliere (Lepidoptera: Pyralidae). J. Env. Bio-Sci 24, 95–98.</li>
+<li>Chikkarugi, N.M., Vijaykumar, L., Raveendra, H.R., Shivanna, B., Navi, S., Kitturmath, M.S., 2023. Resistance to Earhead Caterpillars in Finger Millet. ije. https://doi.org/10.55446/ije.2023.628</li>
+<li>Cocuzza, G.E.M., Mazzeo, G., Russo, A., Giudice, V.L., Bella, S., 2016. Pomegranate arthropod pests and their management in the Mediterranean area. Phytoparasitica. https://doi.org/10.1007/s12600-016-0529-y</li>
+<li>Cortes, J.M.R., Franco, J.C., n.d. Comparação de dois tipos de armadilhas para monitorização de Cryptoblabes gnidiella.</li>
+<li>Cryptoblabes gnidiella (CRYBGN)[Overview]| EPPO Global Database [WWW Document], n.d. URL https://gd.eppo.int/taxon/CRYBGN (accessed 9.16.24).</li>
+<li>Cryptoblabes, qui es-tu ? 1 [WWW Document], n.d. URL http://www.fmcagro.fr/fr/nos-expertises/connaitre-les-ravageurs-des-cultures/cryptobables-gnidiella/index.htm (accessed 9.16.24).</li>
+<li>Cryptoblabes, qui es-tu ? CapTrap.pdf, n.d.</li>
+<li>Cryptoblabes, qui es-tu ? Cycle.pdf, n.d.</li>
+<li>Cryptoblabes, qui es-tu ? doc.pdf, n.d.</li>
+<li>da Costa-Lima, T.C., de Araújo, A.T.P., Torris, A.F., 2021. Biology and Population Dynamics of the American Vine Moth and the Potential Biocontrol with Trichogramma pretiosum. Neotropical Entomology. https://doi.org/10.1007/s13744-021-00850-w</li>
+<li>Dawidowicz, Ł., Rozwałka, R., 2016. Honeydew Moth Cryptoblabes gnidiella (MILLIÈRE, 1867) (Lepidoptera: Pyralidae): an adventive species frequently imported with fruit to Poland. Polish Journal of Entomology 85, 181–189. https://doi.org/10.1515/pjen-2016-0010</li>
+<li>de Morais Oliveira, J.E., de Araujo Fernandes, M.H., Gama, F. de C., Botton, M., Moreira de Carvalho, A.N., 2014. Using the technique of mating disruption for Cryptoblabes gnidiella (Lepidoptera: Pyralidae) population management on grapevine. PESQUISA AGROPECUARIA BRASILEIRA 49, 853–859. https://doi.org/10.1590/S0100-204X2014001100004</li>
+<li>de Pedro, L., Beitia, F., Sabater-Muñoz, B., Asís, J.D., Tormos, J., 2016. Effect of temperature on the developmental time, survival of immatures and adult longevity of Aganaspis daci (Hymenoptera: Figitidae), a natural enemy of Ceratitis capitata (Diptera: Tephritidae). Crop Protection. https://doi.org/10.1016/j.cropro.2016.03.010</li>
+<li>Demirel, N., 2016. Seasonal flight patterns of the honeydew moth, Cryptoblabes gnidiella Millière (Lepidoptera: Pyralidae) in pomegranate orchards as observed using pheromone traps.</li>
+<li>Dominguez, A., Puigmartĺ, M., Bosch, M.P., Rosell, G., Crehuet, R., Ortiz, A., Quero, C., Guerrero, A., 2016. Synthesis, Functional Assays, Electrophysiological Activity, and Field Tests of Pheromone Antagonists of the Tomato Leafminer, Tuta absoluta. Journal of Agricultural and Food Chemistry. https://doi.org/10.1021/acs.jafc.6b00674</li>
+<li>DUFFY, B., GARDNER, D., 1994. LOCALLY ESTABLISHED BOTRYTIS FRUIT ROT OF MYRICA-FAYA, A NOXIOUS WEED IN HAWAII. PLANT DISEASE 78, 919–923. https://doi.org/10.1094/PD-78-0919</li>
+<li>Dunkelblum, E., Levi-Zada, A., 2017. Pheromone Research and Development in Israel 1975–2015. Phytoparasitica. https://doi.org/10.1007/s12600-017-0617-7</li>
+<li>Dunkelblum, E., Mendel, Z., Gries, G., Gries, R., Zegelman, L., Hassner, A., Mori, K., 1996. Antennal response and field attraction of the predator Elatophilus hebraicus (Hemiptera: Anthocoridae) to sex pheromones and analogues of three Matsucoccus spp. (Homoptera: Matsucoccidae). Bioorganic and Medicinal Chemistry. https://doi.org/10.1016/0968-0896(96)00030-2</li>
+<li>Elekcioglu, N.Z., Olculu, M., n.d. Pest, predator and parasitoid species in persimmon orchards in the eastern Mediterranean region of Turkey, with new records. Fresenius Environmental Bulletin 26.</li>
+<li>El-Gepaly, H., El-Khayat, E., Omran, N., Desoky, A., 2021. Effect of Pest Control Applications on Sorghum-Panicle Pests and Associated Predators at Sohag Governorate, Egypt. Journal of Plant Protection and Pathology 12, 639–645. https://doi.org/10.21608/jppp.2021.208008</li>
+<li>El-Gepaly, H.M.K.H., 2019. Insect fauna of pests and their natural enemies inhabiting sorghum-panicles in Egypt. EGYPTIAN JOURNAL OF BIOLOGICAL PEST CONTROL 29. https://doi.org/10.1186/s41938-019-0190-0</li>
+<li>El-Husseini, M.M., El-Heneidy, A.H., Awadallah, K.T., 2018. Natural enemies associated with some economic pests in egyptian agro-ecosystems. Egyptian Journal of Biological Pest Control. https://doi.org/10.1186/s41938-018-0081-9</li>
+<li>Farahpour-Haghani, A., Hassanpour, M., Alinia, F., Nouri-Ganbalani, G., Razmjou, J., Agassiz, D., 2017. Water ferns Azolla spp. (Azollaceae) as new host plants for the small China-mark moth, Cataclysta lemnata (Linnaeus, 1758) (Lepidoptera, Crambidae, Acentropinae). Nota Lepidopterologica. https://doi.org/10.3897/nl.40.10062</li>
+<li>Franco, J.C., Suma, P., Da Silva, E.B., Blumberg, D., Mendel, Z., 2004. Management strategies of mealybug pests of citrus in mediterranean countries. Phytoparasitica. https://doi.org/10.1007/BF02980445</li>
+<li>Franco, J.C., Zada, A., Mendel, Z., 2009. Novel approaches for the management of mealybug pests. Biorational Control of Arthropod Pests: Application and Resistance Management. https://doi.org/10.1007/978-90-481-2316-2_10</li>
+<li>Gahukar, R.T., 1989. Insect pests of millets and their management: A review. Tropical Pest Management. https://doi.org/10.1080/09670878909371411</li>
+<li>Galán, A.J., Martín, A., Torres-Vila, L.M., Ruiz-Moyano, S., Galván, A.I., Serradilla, M.J., López-Corrales, M., 2023. Quantification and identification of damage caused by pests and fungi in dried figs from orchards with different levels of agronomic management in the main production areas of extremadura (SW Spain). Crop Protection. https://doi.org/10.1016/j.cropro.2023.106334</li>
+<li>gggGGGGG, n.d.</li>
+<li>Grosscurt, A.C., Wixley, R.A.J., 1991. Effects of temperature on acaricidal and insecticidal activities of the benzoylureas flucycloxuron and diflubenzuron. Entomologia Experimentalis et Applicata. https://doi.org/10.1111/j.1570-7458.1991.tb01508.x</li>
+<li>Hagstrum, D.W., Subramanyam, B., 2009. Stored-Product Insect Resource. Stored-Product Insect Resource.</li>
+<li>Harari, A.R., Zahavi, T., Gordon, D., Anshelevich, L., Harel, M., Ovadia, S., Dunkelblum, E., 2007. Pest management programmes in vineyards using male mating disruption. PEST MANAGEMENT SCIENCE 63, 769–775. https://doi.org/10.1002/ps.1365</li>
+<li>Harpaz, I., Wysoki, M., 1984. Susceptibility of the carob moth, Ectomyelois ceratoniae, to Bacillus thuringiensis. Phytoparasitica. https://doi.org/10.1007/BF02981172</li>
+<li>Hashim, S., El-Moaty, A., Tadros, A., others, 2017. Alternative non-conventional and environmentally safe horticultural, mechanical and local treatments to control Cryptoblabes gnidiella Millière (Lepidoptera: Pyralidae) in pomegranate orchards in the Northwestern Region of Egypt. Journal of Plant Protection and Pathology 8, 511–515.</li>
+<li>Heckford, R.J., Sterling, P.H., 2004. Notes on, and descriptions of, some larvae of Oecophoridae, Gelechiidae and Pyralidae (Lepidoptera). Entomologist’s Gazette.</li>
+<li>Henderson, P.A., 2021. Southwood’s ecological methods. Southwood’s Ecological Methods. https://doi.org/10.1093/oso/9780198862277.001.0001</li>
+<li>Hight, S.D., Bloem, S., Bloem, K.A., Carpenter, J.E., 2003. Cactoblastis cactorum (Lepidoptera: Pyralidae): Observations of courtship and mating behaviors at two locations on the Gulf Coast of Florida. Florida Entomologist. https://doi.org/10.1653/0015-4040(2003)086[0400:CCLPOO]2.0.CO;2</li>
+<li>Hinton, H.E., 2013. Biology of Insect Eggs. Biology of Insect Eggs. https://doi.org/10.1016/C2013-1-15220-3</li>
+<li>Hinton, H.E., 1943. The Larvae of the Lepidoptera associated with stored Products. Bull. Entomol. Res. 34, 163–212. https://doi.org/10.1017/s0007485300023701</li>
+<li>Ioriatti, C., Anfora, G., Bagnoli, B., Benelli, G., Lucchi, A., 2023. A review of history and geographical distribution of grapevine moths in Italian vineyards in light of climate change: Looking backward to face the future. CROP PROTECTION 173. https://doi.org/10.1016/j.cropro.2023.106375</li>
+<li>Ioriatti, C., Lucchi, A., Varela, L.G., 2012. Grape berry moths in Western European Vineyards and their recent movement into the new world. Grape Berry Moths in Western European Vineyards and Their Recent Movement into the New World. https://doi.org/10.1007/978-94-007-4032-7</li>
+<li>ISHAAYA, I., GUREVITZ, E., ASCHER, K., 1983. SYNTHETIC PYRETHROIDS AND AVERMECTIN FOR CONTROLLING THE GRAPEVINE PESTS LOBESIA-BOTRANA, CRYPTOBLABES-GNIDIELLA AND DROSOPHILA-MELANOGASTER. PHYTOPARASITICA 11, 161–166. https://doi.org/10.1007/BF02980687</li>
+<li>Ishaaya, I., Navon, A., Gurevitz, E., 1986. Comparative toxicity of chlorfluazuron (IKI-7899) and cypermethrin to Spodoptera littoralis, Lobesia botrana and Drosophila melanogaster. Crop Protection. https://doi.org/10.1016/0261-2194(86)90069-4</li>
+<li>Izhar, Y., Wysoki, M., Gur, L., 1979. The effectiveness of Bacillus thuringiensis Berliner on Boarmia (Ascotis) Selenaria Schiff. (Lepidoptera, Geometridae) in laboratory tests and field trials. Phytoparasitica. https://doi.org/10.1007/BF02981579</li>
+<li>Jager, K. de, Daneel, M., 1999. Protect banana bunches against pests with bags. Neltropika Bulletin 305, 32–33.</li>
+<li>Jervis, M.A., 2005. Insects as natural enemies: A practical perspective. Insects As Natural Enemies: A Practical Perspective. https://doi.org/10.1007/978-1-4020-2625-6</li>
+<li>Jervis, M.A., Copland, M.J.W., Shameer, K.S., Harvey, J.A., 2023. The Life-Cycle. Jervis’s Insects as Natural Enemies: Practical Perspectives. https://doi.org/10.1007/978-3-031-23880-2_2</li>
+<li>Johnson, T.L., Elgar, M.A., Symonds, M.R.E., 2022. Movement and olfactory signals: Sexually dimorphic antennae and female flightlessness in moths. Frontiers in Ecology and Evolution. https://doi.org/10.3389/fevo.2022.919093</li>
+<li>Kalaisekar, A., Padmaja, P.G., Bhagwat, V.R., Patil, J.V., 2017. Insect Pests of Millets: Systematics, Bionomics, and Management. Insect Pests of Millets: Systematics, Bionomics, and Management.</li>
+<li>Karsholt, O., Razowski, J., 1996. The Lepidoptera of Europe: a distributional checklist. Apollo books, Stenstrup.</li>
+<li>Karuppaiah, V., Chaware, G.G., Soumia, P.S., Singh, M., 2023. A CHECKLIST OF INSECT PESTS OF ONION. Indian Journal of Entomology. https://doi.org/10.55446/IJE.2021.364</li>
+<li>Keçeci̇, M., 2021. The population dynamic of honeydew moth [Cryptoblabes gnidiella Mill. (Lepidoptera: Pyralidae)] in vineyard in Antalya. Mediterranean Agricultural Sciences 34, 169–173. https://doi.org/10.29136/mediterranean.821101</li>
+<li>Kehat, M., Anshelevich, L., Dunkelblum, E., Fraishtat, P., Greenberg, S., 1994a. Sex pheromone traps for monitoring the codling moth: effect of dispenser type, field aging of dispenser, pheromone dose and type of trap on male captures. Entomologia Experimentalis et Applicata. https://doi.org/10.1111/j.1570-7458.1994.tb01758.x</li>
+<li>Kehat, M., Anshelevich, L., Dunkelblum, E., Greenberg, S., 1994b. Sex Pheromone Traps for Monitoring the Peach Twig Borer, Anarsia lineatella Zeller: Effect of Pheromone Components, Pheromone Dose, Field Aging of Dispenser, and Type of Trap on Male Captures. Phytoparasitica. https://doi.org/10.1007/BF02980530</li>
+<li>Khalaim, A.I., Ruíz-Cancino, E., 2021. Darwin wasps of the subfamily Pimplinae (Hymenoptera: Ichneumonidae) of Mexico: genera Apechthis Förster, Itoplectis Förster and Pimpla Fabricius. Zootaxa. https://doi.org/10.11646/zootaxa.5071.4.1</li>
+<li>Kim, D.-S., Lee, J.-H., 2011. A novel approach to the assessment of fruit damage caused by Carposina sasakii (Lepidoptera: Carposinidae) using pheromone trap catches in Korean orchards. Applied Entomology and Zoology. https://doi.org/10.1007/s13355-010-0022-x</li>
+<li>Korashy, M.A., 2001. Seasonal fluctuation in the population of Cryptoblabes gnidiella millar in mango, grapevine and citrus orchards. Egyptian Journal of Agricultural Research 79, 1379–1386. https://doi.org/10.21608/ejar.2001.320894</li>
+<li>Kovanci, O.B., Schal, C., Walgenbach, J.F., Kennedy, G.G., 2006. Effects of pheromone loading, dispenser age, and trap height on pheromone trap catches of the oriental fruit moth in apple orchards. Phytoparasitica. https://doi.org/10.1007/BF02980952</li>
+<li>Kruger, M., 1998. Identification of the adults of Lepidoptera inhabiting Ravenelia macowaniana Pazschke (Uredinales) galls on Acacia karroo Hayne (Fabaceae) in southern Africa. AFRICAN ENTOMOLOGY 6, 55–74.</li>
+<li>Lasota, J.A., Dybas, R.A., 1991. Avermectins, a novel class of compounds: Implications for use in arthropod pest control. Annual Review of Entomology. https://doi.org/10.1146/annurev.en.36.010191.000515</li>
+<li>Legua, P., Martinez-Nicolas, J.J., Guirao, P., Hernandez, F., Nunez-Gomez, D., Melgarejo, P., 2022. Influence of fruit bagging technique on the morphometric and biochemical characteristics of two pomegranate varieties (Punica granatum L.). FOOD CHEMISTRY: MOLECULAR SCIENCES 4. https://doi.org/10.1016/j.fochms.2022.100112</li>
+<li>Lessio, F., Alma, A., 2021. Models Applied to Grapevine Pests: A Review. INSECTS 12. https://doi.org/10.3390/insects12020169</li>
+<li>Loni, A., Samartsev, K.G., Scaramozzino, P.L., Belokobylskij, S.A., Lucchi, A., 2016. Braconinae parasitoids (Hymenoptera, Braconidae) emerged from larvae of Lobesia botrana (Denis &amp; Schiffermuller) (Lepidoptera, Tortricidae) feeding on Daphne gnidium L. ZOOKEYS 125–150. https://doi.org/10.3897/zookeys.587.8478</li>
+<li>Lopez-Vaamonde, C., Sire, L., Rasmussen, B., Rougerie, R., Wieser, C., Allaoui, A.A., Minet, J., DeWaard, J.R., Decaëns, T., Lees, D.C., 2019. DNA barcodes reveal deeply neglected diversity and numerous invasions of micromoths in Madagascar. Genome. https://doi.org/10.1139/gen-2018-0065</li>
+<li>Lucchi, A., Botton, M., Bagnoli, B., 2011. Tignola rigata su vite da tenere sotto controllo. L’Informatore Agrario 31, 65–69.</li>
+<li>Lucchi, A., Ricciardi, R., Benelli, G., Bagnoli, B., 2019. What do we really know on the harmfulness of Cryptoblabes gnidiella (Milliere) to grapevine? From ecology to pest management. PHYTOPARASITICA 47, 1–15. https://doi.org/10.1007/s12600-018-0705-3</li>
+<li>Luo, Z.X., Li, Z.Q., Cai, X.M., Bian, L., Chen, Z.M., 2017. Evidence of Premating Isolation between Two Sibling Moths: Ectropis grisescens and Ectropis obliqua (Lepidoptera: Geometridae). Journal of Economic Entomology. https://doi.org/10.1093/jee/tox216</li>
+<li>Machota, R., Bortoli, L.C., Cavalcanti, F.R., Botton, M., Grützmacher, A.D., 2016. Assessment of Injuries Caused by Anastrepha fraterculus (Wied.) (Diptera: Tephritidae) on the Incidence of Bunch Rot Diseases in Table Grape. Neotropical Entomology. https://doi.org/10.1007/s13744-016-0377-y</li>
+<li>Mani, M., 2016. Fruit crops: Avocado. Mealybugs and their Management in Agricultural and Horticultural Crops. https://doi.org/10.1007/978-81-322-2677-2_44</li>
+<li>Martinez-Sañudo, I., Mazzon, L., Vecchia, P.D., Bagnoli, B., Lucchi, A., Marchesini, E., Mori, N., n.d. Pyralidae Phycitinae in Italian vineyards: behavioural and molecular genetic investigations.</li>
+<li>Masier, S., Taudière, A., Roy, L.J.M., Carrasco, D., Barnagaud, J.-Y., Planchon, C., Soulié, A.-S., Sleeckx, N., Roy, L., 2023. High-throughput behavioral phenotyping of tiny arthropods: Chemosensory traits in a mesostigmatic hematophagous mite. Journal of Experimental Zoology Part A: Ecological and Integrative Physiology. https://doi.org/10.1002/jez.2651</li>
+<li>McQuate, G., Follett, P., Yoshimoto, J., 2000. Field infestation of rambutan fruits by internal-feeding pests in Hawaii. Journal of Economic Entomology 93, 846–851. https://doi.org/10.1603/0022-0493-93.3.846</li>
+<li>Meert, R., 2020. Cryptoblabes gnidiella (Lepidoptera: Pyralidae) voor het eerst in België vastgesteld. Phegea 48, 90–93.</li>
+<li>Mendel, Z., Avtabi, A., Cocuzza, G.E.M., 2023. Citron Arthropod Pests in the Mediterranean, Their Origin and Notes on Their Biology and Management. The Citron Compendium: The Citron (Etrog) Citrus medica L.: Science and Tradition. https://doi.org/10.1007/978-3-031-25775-9_6</li>
+<li>Mendel, Z., Blumberg, D., Ishaaya, I., 1991. Effect of Buprofezin on Icerya Purchasi and Planococcus Citri. Phytoparasitica. https://doi.org/10.1007/BF02980355</li>
+<li>Mineo, G., 2022. On citrus trees Lepidoptera and particularly on those inhabiting the Mediterranean area, in: Integrated Pest Control in Citrus Groves. CRC Press, pp.&nbsp;127–134.</li>
+<li>Molet, T., 2013. CPHST Pest Datasheet for Cryptoblabes gnidiella.</li>
+<li>Molina, J., 1998. Lepidoptera associated with blueberry cultivation in Western Andalusia.</li>
+<li>Molnár, P.B., Bognár, C., Erdei, A.L., Fujii, T., Vági, P., Jósvai, J.K., Kárpáti, Z., 2018. Identification of the Female-Produced Sex Pheromone of an Invasive Greenhouse Pest, the European Pepper Moth (Duponchelia fovealis). Journal of Chemical Ecology. https://doi.org/10.1007/s10886-018-0928-2</li>
+<li>Mondani, L., Palumbo, R., Tsitsigiannis, D., Perdikis, D., Mazzoni, E., Battilani, P., 2020. Pest management and ochratoxin a contamination in grapes: A review. Toxins. https://doi.org/10.3390/toxins12050303</li>
+<li>Moore, S., 2003. The lemon borer moth: a new citrus pest in South Africa. SA Fruit Journal 2, 37–41.</li>
+<li>Neuenschwander, P., Hennessey, R.D., Herren, H.R., 1987. Food web of insects associated with the cassava mealybug, Phenacoccus manihoti Matile-Ferrero (Hemiptera: Pseudococcidae), and its introduced parasitoid, Epidinocarsis lopezi (De Santis) (Hymenoptera: Encyrtidae), in Africa. Bulletin of Entomological Research. https://doi.org/10.1017/S0007485300011664</li>
+<li>Neunzig, H., 1986. Pyraloidea, Pyralidae, Phycitinae.[in:] RB DOMINICK. The Moths of.</li>
+<li>Nm, C., L, V., Hr, R., B, S., R, K., 2021. Field efficacy of selected insecticide molecules against finger millet [Eleusine coracana (L.) Gaertn.,] earhead caterpillars. J. Entomol. Zool. Stud. 9, 911–915. https://doi.org/10.22271/j.ento.2021.v9.i1m.8261</li>
+<li>Ortu, S., 1982. osservazioni su Planococcus citri (Risso) nelle coltivazioni agrumicole della Sarolegna.</li>
+<li>Ozturk, N., 2018. Creating a degree-day model of honeydew moth [Cryptoblabes gnidiella (Mill., 1867) (Lepidoptera: Pyralidae)] in pomegranate orchards. TURKIYE ENTOMOLOJI DERGISI-TURKISH JOURNAL OF ENTOMOLOGY 42, 53–62. https://doi.org/10.16970/entoted.362264</li>
+<li>Öztürk, N., Ulusoy, M., 2011. Determination of hosts of Honeydew moth [Cryptoblabes gnidiella Mill., 1867 (Lepidoptera: Pyralidae)] and damage ratio on pomegranate fruits in the Eastern Mediterranean Region. Plant Protection Bulletin 51, 231–238.</li>
+<li>Öztürk, N., Ulusoy, M.R., 2013. Trabzon hurması (Diosppyros kaki L.) ve Mısır (Zea mays L.)’da Yeni Bir Zararlı, Portakal güvesi [Cryptoblabes gnidiella Mill.(Lepidoptera: Pyralidae)]. Tarım Bilimleri Araştırma Dergisi 6–9.</li>
+<li>Ozturk, N., Ulusoy, M.R., 2012. Determination of adult population dynamics and generation number of Honeydew moth [Cryptoblabes gnidiella Milliere., 1867 (Lepidoptera: Pyralidae)] in pomegranate orchards in the Eastern Mediterranean Region. TURKIYE ENTOMOLOJI DERGISI-TURKISH JOURNAL OF ENTOMOLOGY 36, 101–112.</li>
+<li>Öztürk, N., Ulusoy, M.R., 2012. Determination of adult population dynamics and generation number of Honeydew moth [Cryptoblabes gnidiella Milliere., 1867 (Lepidoptera: Pyralidae)] in pomegranate orchards in the Eastern Mediterranean Region; [Dogu Akdeniz Bölgesi nar bahçelerinde Portakal güvesi [Cryptoblabes gnidiella Milliere, 1867 (Lepidoptera: Pyralidae)]’nin ergin popülasyon degisimi ve döl sayisinin belirlenmesi]. Turkiye Entomoloji Dergisi.</li>
+<li>Paiva, P.E.B., Yamamoto, P.T., 2014. Citrus caterpillars, with an emphasis onHelicoverpa armigera:a brief review. Citrus Research &amp; Technology 35. https://doi.org/10.5935/2236-3122.20140002</li>
+<li>Peri, E., Kapranas, A., 2012. Pseudococcidae and monophlebidae. Integrated Control of Citrus Pests in the Mediterranean Region. https://doi.org/10.2174/978160805294311201010172</li>
+<li>Pietrement, P., 2021. Étude de l’efficacité de différentes modalités de confusion sexuelle contre Lobesia botrana et Cryptoblabes gnidiella et étude des dynamiques de population au Domaine Cazes (Pyrénées-Orientales) (Master’s Thesis). Domaine Cazès, 4 rue Francisco Ferrer, 66600 Rivesaltes.</li>
+<li>Prasad, G.S., Babu, K.S., 2016. Insect Pest Resistance in Pearl Millet and Small Millets. Biotic Stress Resistance in Millets. https://doi.org/10.1016/B978-0-12-804549-7.00005-6</li>
+<li>Qiu, Z., Qiu, P., Zhu, Q., Wang, R., 2015. Insect trapping method based on progressive star network. International Journal of Online Engineering. https://doi.org/10.3991/ijoe.v11i9.5066</li>
+<li>Rabinowitch, H.D., 1997. Breeding alliaceous crops for pest resistance. Acta Horticulturae. https://doi.org/10.17660/actahortic.1997.433.23</li>
+<li>Ricciardi, R., De Fazi, L., D’Anna, G., Savino, F., Ladurner, E., Iodice, A., Benelli, G., Lucchi, A., 2024. Simultaneous mating disruption of two moth pests of the vineyard (Lobesia botrana and Cryptoblabes gnidiella) through a biodegradable sex pheromone dispenser. Environmental Science and Pollution Research. https://doi.org/10.1007/s11356-024-33980-w</li>
+<li>Ricciardi, R., Di Giovanni, F., Cosci, F., Ladurner, E., Savino, F., Iodice, A., Benelli, G., Lucchi, A., 2021. Mating Disruption for Managing the Honeydew Moth, Cryptoblabes gnidiella (Milliere), in Mediterranean Vineyards. INSECTS 12. https://doi.org/10.3390/insects12050390</li>
+<li>Ringenberg, R., Botton, M., Garcia, M., Nondillo, A., 2005. Compared biology in artificial diets and thermal requirements of Cryptoblabes gnidiella. PESQUISA AGROPECUARIA BRASILEIRA 40, 1059–1065. https://doi.org/10.1590/S0100-204X2005001100002</li>
+<li>Roberts, H., 1969. Forest insects of Nigeria with notes on their biology and distribution.</li>
+<li>Satar, G., Aslan, M.M., Kozanoglu, A., Usanmaz, H., 2020. Lepidoptera Species Harmful in Vineyard Areas in Mediterranean and Southeastern Anatolia Regions. KSU TARIM VE DOGA DERGISI-KSU JOURNAL OF AGRICULTURE AND NATURE 23, 898–903. https://doi.org/10.18016/ksutarimdoga.vi.672020</li>
+<li>Scatoni, I., Bentancourt, C., 1983. Cryptoblabes gnidiella (Millière): una nueva lagarta de los racimos en los viñedos de nuestro país. Revista de la AIA 1, 266–268.</li>
+<li>Search [WWW Document], n.d. URL https://www.gbif.org/species/1873051 (accessed 11.18.22).</li>
+<li>Sellanes, C., González, A., n.d. The potential of sex pheromones analogues for the control of Cryptoblabes gnidiella (Lepdoptera: Pyralidae), an exotic pest in South America.</li>
+<li>Sellanes, C., Rossini, C., Gonzalez, A., 2010. Formate Analogs as Antagonists of the Sex Pheromone of the Honeydew Moth, Cryptoblabes gnidiella: Electrophysiological, Behavioral and Field Evidence. JOURNAL OF CHEMICAL ECOLOGY 36, 1234–1240. https://doi.org/10.1007/s10886-010-9861-8</li>
+<li>SHARMA, H., 1993. HOST-PLANT RESISTANCE TO INSECTS IN SORGHUM AND ITS ROLE IN INTEGRATED PEST-MANAGEMENT. CROP PROTECTION. https://doi.org/10.1016/0261-2194(93)90015-B</li>
+<li>Sharma, H.C., 1985. Strategies for pest control in sorghum in India. Tropical Pest Management. https://doi.org/10.1080/09670878509370977</li>
+<li>Silva, E., Mexia, A., 1999. The pest complex Cryptoblabes gnidiella (Millière)(Lepidoptera: Pyralidae) and Planococcus citri (Risso)(Homoptera: Pseudococcidae) on sweet orange groves (Citrus sinensis (L.) Osbeck) in Portugal: interspecific association. Boletín de Sanidad Vegetal 25, 89–98.</li>
+<li>Simoglou, K.B., Karataraki, A., Roditakis, N.E., Roditakis, E., 2012. Euzophera bigella (Zeller) (Lepidoptera: Pyralidae) and Dasineura oleae (F. Low) (Diptera: Cecidomyiidae): Emerging olive crop pests in the Mediterranean? Journal of Pest Science. https://doi.org/10.1007/s10340-012-0418-1</li>
+<li>Sneh, B., Schuster, S., Broza, M., 1981. Insecticidal activity of Bacillus thuringiensis strains against the egyptian cotton leaf worm Spodoptera littoralis [Lep.: Nocutidae]. Entomophaga. https://doi.org/10.1007/BF02375031</li>
+<li>Soares, J.B.C., Costa, E.M., da Silva, F.E.L., Araujo, E.L., 2016. Insect diversity in an experimental vineyard in the state of Rio grande do norte, Brazil; [Diversidade de insetos em um vinhedo experimental no estado do Rio grande do norte, Brasil]. Revista Caatinga. https://doi.org/10.1590/1983-21252016v29n128rc</li>
+<li>Strong, L., Brown, T.A., 1987. Avermectins in insect control and biology: A review. Bulletin of Entomological Research. https://doi.org/10.1017/S0007485300011846</li>
+<li>Swailem, S., Ismail, I., 1972. On the biology of the honey dew moth Cryptoblabes gnidiella, Milliere.</li>
+<li>SWIRSKI, E., IZHAR, Y., WYSOKI, M., GUREVITZ, E., GREENBERG, S., 1980. INTEGRATED CONTROL OF THE LONG-TAILED MEALYBUG, PSEUDOCOCCUS-LONGISPINUS [HOM, PSEUDOCOCCIDAE], IN AVOCADO PLANTATIONS IN ISRAEL. ENTOMOPHAGA 25, 415–426. https://doi.org/10.1007/BF02374704</li>
+<li>Thoms, E.M., Watson, T.F., 1986. Effect of Dipel (Bacillus thuringiensis) on the survival of immature and adult Hyposoter exiguae (Hymenoptera: Ichneumonidae). Journal of Invertebrate Pathology. https://doi.org/10.1016/0022-2011(86)90044-3</li>
+<li>Ticchi, M., 2021. Monitoraggio di Cryptoblabes gnidiella (Millière)(Pyralidae, Phycitinae) in un vigneto della collina litoranea marchigiana. Università Polytecnica delle Marche.</li>
+<li>Tohamy, T., A Abd El-Raheem, A., I El Khouly, M., 2007. Biological control of the honeydew moth, Cryptoblabes gnidiella mill. In grape orchards using the local egg parasitoid, Trichogramma evanescens west. and agerin (Bacillus thuringiensis) as compared with recommended insecticides in middle Egypt. Assiut Journal of Agricultural Sciences 38, 93–111.</li>
+<li>Tremblay, E., 1990. Entomologia applicata, vol.&nbsp;2. Liguori Editore, Napoli.</li>
+<li>Twidle, A.M., Pilkington, L.I., Suckling, D.M., Barker, D., 2021. Synthesis and Electrophysiological Testing of Carbonyl Pheromone Analogues for Carposinid Moths. ACS Omega. https://doi.org/10.1021/acsomega.1c02614</li>
+<li>Twidle, A.M., Suckling, D.M., Chhagan, A., Pilkington, L.I., Park, K.C., Barker, D., 2020. Synthesis and biological testing of ester pheromone analogues for two fruitworm moths (Carposinidae). Journal of Agricultural and Food Chemistry. https://doi.org/10.1021/acs.jafc.0c04131</li>
+<li>Valeria Vidart, M., Valentina Mujica, M., Victoria Calvo, M., Duarte, F., Maria Bentancourt, C., Franco, J., Beatriz Scatoni, I., 2013. Relationship between male moths of Cryptoblabes gnidiella (Milliere) (Lepidoptera: Pyralidae) caught in sex pheromone traps and cumulative degree-days in vineyards in southern Uruguay. SPRINGERPLUS 2. https://doi.org/10.1186/2193-1801-2-258</li>
+<li>Velez-Gavilan, J., 2023. Cryptoblabes gnidiella (honeydew moth).</li>
+<li>Venthur, H., Zhou, J.-J., 2018. Odorant receptors and odorant-binding proteins as insect pest control targets: A comparative analysis. Frontiers in Physiology. https://doi.org/10.3389/fphys.2018.01163</li>
+<li>Ventura, M.U., Destro, D., Lopes, E.C.A., Montalván, R., 1999. Avocado moth (Lepidoptera: Stenomidae) damage in two avocado cultivars. Florida Entomologist. https://doi.org/10.2307/3496479</li>
+<li>Verma, S.K., 1980. Field pests of pearl millet in India. Tropical Pest Management. https://doi.org/10.1080/09670878009414277</li>
+<li>Villanueva-Bonilla, G.A., de Pádua, D.G., Sobczak, J.F., 2021. New records of pimpla fabricius, 1804 (Hymenoptera, ichneumonidae, pimplinae) from brazilian northeast. Check List. https://doi.org/10.15560/17.1.159</li>
+<li>Wagner, D.L., Gagliardi, B.L., 2015. Hairstreaks (and Other Insects) feeding at galls, honeydew, extrafloral nectaries, sugar bait, cars, and other routine substrates. American Entomologist. https://doi.org/10.1093/ae/tmv045</li>
+<li>Wellinga, S., Wysoki, M., 1989. Preliminary investigation of food source preferences of the parasitoid Trichogramma platneri Nagarkatti (Hymenoptera, Trichogrammatidae). Anzeiger für Schädlingskunde Pflanzenschutz Umweltschutz. https://doi.org/10.1007/BF01905844</li>
+<li>Wenninger, E.J., Averill, A.L., 2006. Effects of delayed mating on reproductive output of female oriental beetle Anomala orientalis (Coleoptera: Scarabaeidae). Agricultural and Forest Entomology. https://doi.org/10.1111/j.1461-9563.2006.00300.x</li>
+<li>Windelspecht, M., Richmond, R.C., Cochrane, B.J., 1998. Survey of Malathion Resistance and Avermectin Susceptibility in Field Populations of Drosophila melanogaster (Diptera: Drosophilidae) and D. simulans. Journal of Economic Entomology. https://doi.org/10.1093/jee/91.6.1245</li>
+<li>Wu, Q., Habili, N., Constable, F., Al Rwahnih, M., Goszczynski, D.E., Wang, Y., Pagay, V., 2020. Virus pathogens in Australian vineyards with an emphasis on Shiraz disease. Viruses. https://doi.org/10.3390/v12080818</li>
+<li>Wysoki, M., 1977. Insect pests of macadamia in Israel. Phytoparasitica. https://doi.org/10.1007/BF02980352</li>
+<li>WYSOKI, M., BENYEHUDA, S., ROSEN, D., 1993. REPRODUCTIVE-BEHAVIOR OF THE HONEYDEW MOTH, CRYPTOBLABES-GNIDIELLA. INVERTEBRATE REPRODUCTION &amp; DEVELOPMENT 24, 217–224. https://doi.org/10.1080/07924259.1993.9672355</li>
+<li>WYSOKI, M., DEHAAN, P., IZHAR, Y., 1988. EFFICACY OF BACILLUS-THURINGIENSIS PREPARATIONS CONTAINING DEAD AND LIVE SPORES AGAINST 2 AVOCADO PESTS 1. THE GIANT LOOPER, BOARMIA-SELENARIA (LEP, GEOMETRIDAE) AND THE HONEYDEW MOTH, CRYPTOBLABES-GNIDIELLA (LEP, PHYCITIDAE). CROP PROTECTION 7, 131–136. https://doi.org/10.1016/0261-2194(88)90024-5</li>
+<li>WYSOKI, M., DEJONG, M., 1989. ATTRACTION OF TRICHOGRAMMA-PLATNERI TO EGGS OF SOME LEPIDOPTEROUS PESTS OF AVOCADO. PHYTOPARASITICA 17, 315–318. https://doi.org/10.1007/BF02980760</li>
+<li>Wysoki, M., Izhar, Y., 1978. A list of arthropod pests of avocado and pecan trees in Israel. Phytoparasitica. https://doi.org/10.1007/BF02980388</li>
+<li>Wysoki, M., Izhar, Y., Gurevitz, E., Swirski, E., Greenberg, S., 1975. Control of the honeydew moth, Cryptoblabes gnidiella Mill. (Lepidoptera: Phycitidae), with Bacillus thuringiensis berliner in avocado plantations. Phytoparasitica. https://doi.org/10.1007/BF03158292</li>
+<li>Wysoki, M., Izhar, Y., Swirski, E., Gurevitz, E., Greenberg, S., 1977. Susceptibility of avocado varieties to the long-tailed mealybug, Pseudococcus longispinus (Targioni Tozzetti) (Homoptera: pseudococcidae), and a survey of its host plants in Israel. Phytoparasitica. https://doi.org/10.1007/BF02980347</li>
+<li>Wysoki, M., Jong, M. de, Rene, S., 1988. Trichogramma platneri Nagarkatti (Hymenoptera: Trichogrammatidae), its biology and ability to search for eggs of two lepidopterous avocado pests, Boarmia (Ascotis) selenaria (Schiffermüller)(Geometridae) and Cryptoblabes gnidiella (Milliere)(Phycitidae) in Israel.</li>
+<li>WYSOKI, M., RENNEH, S., 1985. INTRODUCTION INTO ISRAEL OF TRICHOGRAMMA-PLATNERI NAGARKATTI, AN EGG PARASITE OF LEPIDOPTERA. PHYTOPARASITICA 13, 139–140. https://doi.org/10.1007/BF02980891</li>
+<li>WYSOKI, M., SWIRSKI, E., IZHAR, Y., 1981. BIOLOGICAL-CONTROL OF AVOCADO PESTS IN ISRAEL. PROTECTION ECOLOGY 3, 25–28.</li>
+<li>Yildirim, Eyyüp Mennan, 2017. The effect of Neem and Bacillus thuringiensis on Cryptoblabes gnidiella mill. (Lepidoptera: Pyralidae) in pomegranate orchards. Agro Food Industry Hi-Tech.</li>
+<li>Yildirim, Eyyup Mennan, 2017. The effect of neem and Bacillus thuringiensis on Cryptoblabes gnidiella Mill. (Lepidoptera: Pyralidae) in Pomegranate Orchards. AGRO FOOD INDUSTRY HI-TECH 28, 24–26.</li>
+<li>Zada, A., Dunkelblum, E., Assael, F., Franco, J.C., Da Silva, E.B., Protasov, A., Mendel, Z., 2008. Attraction of Planococcus ficus males to racemic and chiral pheromone baits: Flight activity and bait longevity. Journal of Applied Entomology. https://doi.org/10.1111/j.1439-0418.2008.01277.x</li>
+<li>Zhang, A., Polavarapu, S., 2004. Identification of a sex pheromone component for the blueberry leafminer, Caloptilia porphyretica. Journal of Chemical Ecology. https://doi.org/10.1023/B:JOEC.0000042066.77560.59</li>
+<li>ZIMMERMAN, E., 1972. CRYPTOBLABES-GNIDIELLA AND ALIENA (LEPIDOPTERA-PYRALIDAE-PHYCITINAE). PACIFIC INSECTS 14, 433+.</li>
+<li>Zonal Agricultural Research Station, Vishweshwaraiah Canal Farm, Mandya-571 405, India, Chikkarugi, N.M., Vijaykumar, L., College of Agriculture, Vishweshwaraiah Canal Farm, Mandya-571 405, India, Yeshwanth, H.M., College of Agriculture, Gandhi Krishi Vigyan Kendra, Bangalore-560 065, India, Raveendra, H.R., Zonal Agricultural Research Station, Vishweshwaraiah Canal Farm, Mandya-571 405, India, Shivanna, B., College of Agriculture, Gandhi Krishi Vigyan Kendra, Bangalore-560 065, India, 2023. Occurrence of ear head caterpillar species complex on Kenyan finger millet (Eleusine coracana L. Gaertn.) genotypes. JEB 44, 207–213. https://doi.org/10.22438/jeb/44/2/mrn-3030</li>
+<li>Zumbado-Ulate, H., Schartel, T.E., Simmons, G.S., Daugherty, M.P., 2023. Assessing the risk of invasion by a vineyard moth pest guild. NEOBIOTA 86, 169–191. https://doi.org/10.3897/neobiota.86.100579</li>
+</ol>
+<p></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/rossi-jp\.github\.io\/home\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Copyright 2026, J.-P. Rossi</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Pages built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

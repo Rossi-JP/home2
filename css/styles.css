@@ -1,0 +1,142 @@
+/* css styles */
+
+/*permet de passer outre le scss et d'imposer un format pour les callout*/
+.callout-note {
+  background-color: #f0f8ff !important; /* couleur claire et visible */
+  border-left: 4px solid #007acc !important;
+  padding: 1em !important;
+  color: #000 !important;
+}
+
+
+/*les paragaraphes sont justifiés*/
+p {
+  /*color: blue;*/
+  text-align: justify;
+  text-justify: inter-word;
+}
+/* -------------------------------- */
+body{
+  font-family: Helvetica;
+  /* font-size: 12pt;*/
+  font-size: 1.0rem;  /* Valeur par défaut = 1rem, donc 1.15rem = 115% */
+  line-height: 1.6;
+}
+/* -------------------------------- */
+legen_ancien
+{
+  font-size: normal;
+	font-weight:bold;
+	/*line-height: 11px;*/
+  text-align: justify;
+/*	line-height: 7px;*/
+}
+/* -------------------------------- */
+.imageflottanteG_ancien
+{
+   float: left;
+   padding-right: 20px;
+   padding-bottom: 8px;
+	/*font-size: small;
+	font-weight:bold;
+	width: auto;/*200px*/
+  /*  
+	margin: auto;
+    text-align: center;*/
+}
+/* -------------------------------- */
+.imageflottanteD_ancien
+{
+   float: right;
+   /*padding:10px;*/
+    padding-left: 40px;
+    padding-bottom: 8px;
+    text-align: justify;
+}
+
+/* -------------------------------- */
+/* nouveaux styles pour les images et leur légende */
+.imageflottanteC
+{
+  margin-right: 15px;
+  margin-bottom: 5px;
+  max-width: 90%;
+  text-align: justify;
+}
+/* Styles pour les images flottantes */
+.imageflottanteG
+{
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  max-width: 40%;
+  text-align: justify;
+}
+
+.imageflottanteD
+{
+  float: right;
+  margin-left: 15px;
+  margin-bottom: 5px;
+  max-width: 40%;
+  /* margin-right: 1px; /* Espace entre l'image et le bord droit */
+  text-align: justify;
+}
+
+/* Styles pour la légende */
+.legen
+{
+  font-size: 0.9em;
+  text-align: justify;
+  padding-top: 1px;
+  margin-left: 10px;
+  max-width: 100%;
+  display: block;
+  padding-left: 1px; /*crée un petit espace à gauche du début de la légende */
+}
+
+/* -------------------------------- */
+/* faire une lettrine <p class="lettrine">*exemple*</p> */
+.lettrine {
+  float: left;
+  font-size: 3em; /* Ajustez la taille de la lettrine */
+  line-height: 1; /* Ajustez la hauteur de ligne pour mieux aligner la lettrine */
+  padding-right: 5px; /* Espace entre la lettrine et le texte */
+  padding-top: 5px; /* Ajustez la position verticale */
+  margin: 0 5px 10px 0; /* Ajustez les marges autour de la lettrine */
+  text-transform: uppercase; /* Optionnel : mettre les lettres en majuscule */
+}
+
+/* -------------------------------- */
+/* formater le tableau de la page index */
+.tabindex{
+/*   margin-left:auto;
+   margin-right:auto; */
+   width: 90%;
+   font-size: 110%;
+   text-justify: inter-word;
+   /*background-color: #FFFDE6;*/
+}
+/* -------------------------------- */
+/* formater les titres */
+h1{
+  font-size: 150%;
+  /*font-weight:bold;*/
+}
+h2{
+  font-size: 130%;
+  /* font-style: normal;*/
+}
+h3{
+  font-size: 110%;
+}
+
+/* pour le trait autour des iframe*/
+.custom-border {
+    border: 2px solid black; /* Définit une bordure de 2 pixels solide noire */
+}
+
+iframe {
+  border: 1px solid #000; /* Bordure noire de 2 pixels */
+  border-radius: 5px;    /* Coins arrondis */
+}

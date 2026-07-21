@@ -1,0 +1,400 @@
+---
+title: "Publications"
+format: html 
+lang: fr
+toc: true
+toc-location: right
+---
+
+# Articles and Book Chapters
+
+- Rossi, J.-P., Kerdelhué, C., Roques, A., 2026. Climatic niche dynamics and potential range expansion of the invasive cerambycid *Xylotrechus chinensis* in Europe. Basic and Applied Ecology S1439179126000496. <https://doi.org/10.1016/j.baae.2026.07.001>{target="_blank"}
+
+- Vernier, C., Chapuis, M.-P., Rossi, J.-P., Piou, C., 2026. Strong alignment between individuals and attraction to trophic resource in patchy landscapes favour group foraging in locusts nymphs. Ecological Modelling 521, 111749. <https://doi.org/10.1016/j.ecolmodel.2026.111749>{target="_blank"}
+
+- Labruyère, S., Kenis, M., Rossi, J.-P., Rousse, P., Streito, J.-C., Volkoff, A.-N., 2026. La chenille légionnaire d’automne : connaître, détecter, contrôler. Phytoma 789, 24–27.
+
+- Le Bourgeois, T., Blanchard, G., Fried, G., Gachet, E., Kazakou, E., Rossi, J.-P., 2026. Amaranthus palmeri : une adventice nuisible menace la France. Phytoma 789, 16–18.
+
+- Rossi, J.-P., Streito, J.-C., 2026. Le fulgore tacheté, un insecte exotique à surveiller. Phytoma 788, 22–25.
+
+---
+
+- Rossi, J.-P., Battisti, A., Avtzis, D.N., Burban, C., Rahim, N., Rousselet, J., Kerdelhué, C., İpekdal, K., 2025. Warmer and brighter winters than before: Ecological and public health challenges from the expansion of the pine processionary moth (*Thaumetopoea pityocampa*). Science of The Total Environment 978, 179470. <https://doi.org/10.1016/j.scitotenv.2025.179470>{target="_blank"}
+
+- Rossi, J.-P, Streito, J.-C. 2025. Le fulgore tacheté : une menace pour la viticulture en Europe. IVES Technical Reviews, vine and wine, in press. <https://doi.org/10.20870/IVES-TR.2025.9725>{target="_blank"}
+
+- Poeydebat, C., Courchinoux, E., Mazet, I.D., Rodriguez, M., Chataigner, A., Lelièvre, M., Goutouly, J.-P., Rossi, J.-P., Raynal, M., Delière, L., Delmotte, F., 2025. Digital droplet PCR quantification and field-scale spatial distribution of *Plasmopara viticola* oospores in vineyard soil. Applied and Environmental Microbiology e01667-25. <https://doi.org/10.1128/aem.01667-25>{target="_blank"}
+
+- Streito, J.-C., Rossi, J.-P. 2025. État des lieux sur l’invasion de la punaise diabolique. Jardins de France. La revue de la société nationale d'horticulture de France, n°678, pages 72-75.
+
+- Streito, J.-C., Mouttet, R., Rousse, P., Rossi, J.-P. 2025. L’agrile asiatique du frêne aux portes de l’Europe. In C. Robinet, F.-X. Saintonge, X. Tassus, S. Brault, coords. Invasion et expansion d’insectes bioagresseurs forestiers. Editions Quae, pp. 125-133.
+
+- Mesmin, X., Chartois, M., Farigoule, P., Burban, C., Streito, J.-C., Thuillier, J.-M., Pierre, É., Lambert, M., Mellerin, Y., Bonnard, O., Van Halder, I., Fried, G., Rasplus, J.-Y., Cruaud, A., Rossi, J.-P., 2025. Insect-habitat-plant interaction networks provide guidelines to mitigate the risk of transmission of *Xylella fastidiosa* to grapevine in Southern France. PLoS One 20, e0332344. <https://doi.org/10.1371/journal.pone.0332344>{target="_blank"}
+
+- Chartois, M., Fried, M., Rossi, J.-P. 2025. Climate and host plant availability are favorable to the establishment of *Lycorma delicatula* in Europe.  Agricultural and Forest Entomology 27, 316–328. <https://doi.org/10.1111/afe.12665>{target="_blank"}
+
+---
+
+- Rossi, J.-P., Mouttet, R., Rousse, P., Streito, J.-C., 2024. Modelling the potential range of *Agrilus planipennis* in Europe according to current and future climate conditions. Trees, Forests and People 16, 100559 <https://doi.org/10.1016/j.tfp.2024.100559>{target="_blank"}
+
+- Urvois, T., Auger-Rozenberg, M.-A., Roques, A., Kerdelhué, C., Rossi, J.-P. 2024. Potential geographical distribution of two genetic lineages of the ambrosia beetle *Xylosandrus crassiusculus* and the impact of climate change. Oecologia 204, 761-774. <https://doi.org/10.1007/s00442-024-05528-9>{target="_blank"}
+
+- Kerdelhué, C., Rossi, J.-P., Bernard, A., Fanjas-Mercere, T., Gross, L., Nusillard, B., Pineau, P., Pradel, J., Talbi, A., Rousselet, J. 2024. Dataset documenting prevalence and counts of pine processionary moth tents on local host trees in 3 regions of France with different climatic environments. Data in Brief 53, 110208. <https://doi.org/10.1016/j.dib.2024.110208>{target="_blank"}
+
+- Soubeyrand, S. et al., 2024. Building integrated plant health surveillance: a proactive research agenda for anticipating and mitigating disease and pest emergence. CABI Agriculture and Bioscience 5, 72. <https://doi.org/10.1186/s43170-024-00273-8>{target="_blank"}
+
+- Streito, J.-C. Rossi, J.-P. 2024. Des sciences participatives pour la surveillance phytosanitaire. Phytoma 774, pages 24-27, Mai 2024.
+
+---
+
+- Lannou, C., Rasplus, J.-Y., Soubeyrand, S., Gautier, M., Rossi, J.-P., 2023. Crises sanitaires en agriculture: Les espèces invasives sous surveillance. Quae.
+
+- Streito, J.-C., Mendes, E., Sanquer, E., Sanquer, E., Strugarek, M., Ouvrard, D., Robin-Havret, V., Poncet, L., Lannou, C., Rossi, J.-P. 2023. Incursion preparedness, citizen Science and early detection of invasive insects: The case of *Aleurocanthus spiniferus* (Hemiptera, Aleyrodidae) in France.  Insects 14, 916. <https://doi.org/10.3390/insects14120916>{target="_blank"}
+
+- Rossi, J.-P., Rasplus, J.-Y., 2023. Climate change and the potential distribution of the glassy-winged sharpshooter (*Homalodisca vitripennis*), an insect vector of *Xylella fastidiosa*. Science of The Total Environment 860, 160375. <https://doi.org/10.1016/j.scitotenv.2022.160375>{target="_blank"}
+
+- Rossi, J.-P., Gautier, M. 2023. Biologie de l’invasion. In C. Lannou, J.-Y. Rasplus, S. Soubeyrand, M. Gautier, J.-P. Rossi, coords. Crises sanitaires en agriculture, Les espèces invasives sous surveillance. Editions Quae, pp. 23-24.
+
+- Rossi, J.-P. 2023. Climat et invasions biologiques. In C. Lannou, J.-Y. Rasplus, S. Soubeyrand, M. Gautier, J.-P. Rossi, coords. Crises sanitaires en agriculture : Les espèces invasives sous surveillance. Editions Quae, pp. 71-78. 
+- Urvois, T., Rossi J.-P., Perrier, C., Roques, A., Auger-Rozenberg, M.-A., Kerdelhué, C. 2023. Les scolytes du genre Xylosandrus à la conquête de l’Europe. In C. Lannou, J.-Y. Rasplus, S. Soubeyrand, M. Gautier, J.-P. Rossi, coords. Crises sanitaires en agriculture : Les espèces invasives sous surveillance. Editions Quae, pp. 79-95. 
+
+- Streito, J.-C., Papaix, J., Chartois, M., Botella, C., Pierre, E. Jean-Marc, J.-M., Gaudin, J., Rossi, J.-P. 2023. Les citoyens, sentinelles de la surveillance phytosanitaire ? In C. Lannou, J.-Y. Rasplus, S. Soubeyrand, M. Gautier, J.-P. Rossi, coords. Crises sanitaires en agriculture : Les espèces invasives sous surveillance. Editions Quae, pp. 151-163. 
+
+-  Mesmin, X., Lambert, M., Chartois, M., Farigoule, P., Cesari, L., Quiquerez, I., Borgomano, S., Rossi, J., Rasplus, J., Cruaud, A., 2023. No detection of *Xylella fastidiosa* in cicadas (Hemiptera, Cicadidae) sampled in infected areas of Corsica (France). Journal of Applied Entomology 147, 559–563. <https://doi.org/10.1111/jen.13120>{target="_blank"}
+
+- Chartois, M., Mesmin, X., Quiquerez, I., Borgomano, S., Farigoule, P., Pierre, É., Thuillier, J.-M., Streito, J.-C., Casabianca, F., Hugot, L., Rossi, J.-P., Rasplus, J.-Y., Cruaud, A., 2023. Environmental factors driving the abundance of *Philaenus spumarius* in mesomediterranean habitats of Corsica (France). Scientific Reports 13, 1901. <https://doi.org/10.1038/s41598-023-28601-4>{target="_blank"}
+
+---
+
+- Godefroid, M., Cruaud, A., Streito, J.-C., Rasplus, J.-Y., Rossi, J.-P. 2022. Forecasting future range shifts of *Xylella fastidiosa* under climate change. Plant Pathology 71, 1839-1848. <https://doi.org/10.1111/ppa.13637>{target="_blank"}
+
+- Farigoule, P., Chartois M., Mesmin, X., Lambert M., Rossi J.-P., Rasplus, J.-Y., Cruaud, A. 2022. Vectors As Sentinels: Rising Temperatures Increase Risk of *Xylella fastidiosa* Outbreaks. Biology 11, 1299. <https://doi.org/10.3390/biology11091299>{target="_blank"}
+
+- Mesmin, X., Chartois, M., Borgomano, S., Rasplus, J.-Y., Rossi, J.-P., Cruaud, A., 2022. Interaction networks between spittlebugs and vegetation types in and around olive and clementine groves of Corsica; implications for the spread of *Xylella fastidiosa*. Agriculture, Ecosystems & Environment 334, 107979. <https://doi.org/10.1016/j.agee.2022.107979>{target="_blank"}
+
+- Martin, J.-C., Mesmin, X., Buradino, M., Rossi, J.-P., Kerdelhué, C. 2022. Complex drivers of phenology in the pine processionary moth: Lessons from the past. Agricultural and Forest Entomology 24, 247–259. <https://doi.org/10.1111/afe.12488>{target="_blank"}
+
+---
+
+- Chartois, M., Streito, J.-C., Pierre, É., Armand, J.-M., Gaudin, J., Rossi, J.-P., 2021. A crowdsourcing approach to track the expansion of the brown marmorated stinkbug *Halyomorpha halys* (Stål, 1855) in France. Biodiversity Data Journal 9, e66335. <https://doi.org/10.3897/BDJ.9.e66335>{target="_blank"} 
+
+- Chauvel, B., Fried, G., Follak, S., Chapman, D., Kulakova, Y., Bourgeois, T.L., Marisavljevic, D., Monty, A., Rossi, J.-P., Starfinger, U., Tanner, R., Tassus, X., Valkenburg, J.V., Regnier, E., 2021. Monographs on invasive plants in Europe N° 5: *Ambrosia trifida* L. Botany Letters 168, 167–190. <https://doi.org/10.1080/23818107.2021.1879674>{target="_blank"} 
+
+- Cruaud, A., Delvare, G., Nidelet, S., Sauné, L., Ratnasingham, S., Chartois, M., Blaimer, B.B., Gates, M., Brady, S.G., Faure, S., Noort, S., Rossi, J., Rasplus, J., 2021. Ultra‐Conserved Elements and morphology reciprocally illuminate conflicting phylogenetic hypotheses in Chalcididae (Hymenoptera, Chalcidoidea). Cladistics 37, 1–35. <https://doi.org/10.1111/cla.12416>{target="_blank"}  
+
+- Georgiev, G., Rousselet, J., Laparie, M., Robinet, C., Georgieva, M., Zaemdzhikova, G., Roques, A., Bernard, A., Poitou, L., Buradino, M., Kerdelhué, C., Rossi, J.-P., Matova, M., Boyadzhiev, P., Mirchev, P., 2021. Comparative studies of egg parasitoids of the pine processionary moth (*Thaumetopoea pityocampa*, Den. & Schiff.) in historic and expansion areas in France and Bulgaria. Forestry: An International Journal of Forest Research 94, 324–331. <https://doi.org/10.1093/forestry/cpaa022>{target="_blank"}  
+
+- Martin, J.-C., Rossi, J.-P., Buradino, M., Kerdelhué, C., 2021. Monitoring of adult emergence in the pine processionary moth between 1970 and 1984 in Mont Ventoux, France. Biodiversity Data Journal 9, e61086. <https://doi.org/10.3897/BDJ.9.e61086>{target="_blank"}  
+
+- Rasplus, J.-Y., Rodriguez, L.J., Sauné, L., Peng, Y.-Q., Bain, A., Kjellberg, F., Harrison, R.D., Pereira, R.A.S., Ubaidillah, R., Tollon-Cordet, C., Gautier, M., Rossi, J.-P., Cruaud, A., 2021. Exploring systematic biases, rooting methods and morphological evidence to unravel the evolutionary history of the genus *Ficus* (Moraceae). Cladistics 37, 402–422. <https://doi.org/10.1111/cla.12443>{target="_blank"}
+
+- Streito, J.-C., Chartois, M., Pierre, É., Dusoulier, F., Armand, J.-M., Gaudin, J., Rossi, J.-P., 2021. Citizen science and niche modeling to track and forecast the expansion of the brown marmorated stinkbug *Halyomorpha halys* (Stål, 1855). Scientific Reports 11, 11421. <https://doi.org/10.1038/s41598-021-90378-1>{target="_blank"} 
+
+- Urvois, T., Auger-Rozenberg, M.A., Roques, A., Rossi, J.-P., Kerdelhué, C., 2021. Climate change impact on the potential geographical distribution of two invading Xylosandrus ambrosia beetles. Scientific Reports 11, 1339. <https://doi.org/10.1038/s41598-020-80157-9>{target="_blank"}
+
+- Dossou, H.J., Houemenou, H., Etougbetche, J., Sossou, M., Badou, S., Houemenou, G., Rossi, J.-P., Dobigny, G., Tenté, B., 2021. Analyse de la variabilité spatio-temporelle des eaux stagnantes dans la ville de Cotonou. Annales des sciences agronomiques 25, 77–90.
+
+---
+
+- Burban, C., Rocha, S., Leblois, R., Rossi, J.-P., Sauné, L., Branco, M., Kerdelhué, C., 2020. From sympatry to parapatry: a rapid change in the spatial context of incipient allochronic speciation. Evolutionary Ecology 34, 101–121. <https://doi.org/10.1007/s10682-019-10021-4>{target="_blank"}
+
+- Giovani, B.et al., 2020. Science diplomacy for plant health. Nature Plants 6, 902–905. <https://doi.org/10.1038/s41477-020-0744-x>{target="_blank"}
+
+- Godefroid, M., Meurisse, N., Groenen, F., Kerdelhué, C., Rossi, J.-P., 2020. Current and future distribution of the invasive oak processionary moth. Biological Invasions 22, 523–534. <https://doi.org/10.1007/s10530-019-02108-4>{target="_blank"}
+
+- Mesmin, X., Chartois, M., Genson, G., Rossi, J.-P., Cruaud, A., Rasplus, J.-Y., 2020. *Ooctonus vulgatus* (Hymenoptera, Mymaridae), a potential biocontrol agent to reduce populations of *Philaenus spumarius* (Hemiptera, Aphrophoridae) the main vector of *Xylella fastidiosa* in Europe. PeerJ 8, e8591. <https://doi.org/10.7717/peerj.8591>{target="_blank"}
+
+- Streito, J.-C., Chartois, M., Pierre, É., Rossi, J.-P., 2020. Beware the brown marmorated stink bug! IVES Technical Reviews Vine and Wine. <https://doi.org/10.20870/IVES-TR.2020.3304>{target="_blank"}
+
+- Farigoule, P., Chartois, M., Mesmin, X., Quiquerez, I., Genson, G., Godefroid, M., Nidelet, S., Pierre, É, Thuillier, J.-M., Borgomano, S., Casabianca, F., Hugot, L., Streito, J.-C., Rossi, J.-P., Rasplus, J.-Y., Cruaud, A., 2020. *Xylella fastidiosa* : insectes vecteurs, plantes et climat. Phytoma 732, 39–43.
+
+---
+
+- Godefroid, M., Cruaud, A., Streito, J.-C., Rasplus, J.-Y., Rossi, J.-P., 2019. *Xylella fastidiosa*: climate suitability of European continent. Scientific Reports 9, 8844. <https://doi.org/10.1038/s41598-019-45365-y>{target="_blank"} 
+
+- Godefroid, M., Meseguer, A.S., Sauné, L., Genson, G., Streito, J.-C., Rossi, J.-P., Zaldívar Riverón, A., Mayer, F., Cruaud, A., Rasplus, J.-Y., 2019. Restriction-site associated DNA markers provide new insights into the evolutionary history of the bark beetle genus *Dendroctonus*. Molecular Phylogenetics and Evolution 139, 106528. <https://doi.org/10.1016/j.ympev.2019.106528>{target="_blank"}
+
+- Rossi, J.-P., Dobigny, G., 2019. Urban Landscape Structure of a Fast-Growing African City: The Case of Niamey (Niger). Urban Science 3, 63. <https://doi.org/10.3390/urbansci3020063>{target="_blank"} 
+
+- Rossi, J.-P., Godefroid, M., Burban, C., Chartois, M., Mesmin, X., Farigoule, P., Streito, J.-P., Cruaud, A., Rasplus, J.-Y., 2019. Evaluer le risque associé à des agents phytopathogènes émergents transmis par des insectes : le cas de *Xylella fastidiosa*. Innovations Agronomiques 77, 87-97. https://doi.org/10.15454/PFZ7-K907
+
+---
+
+- Cruaud, A., Gonzalez, A.-A., Godefroid, M., Nidelet, S., Streito, J.-C., Thuillier, J.-M., Rossi, J.-P., Santoni, S., Rasplus, J.-Y., 2018. Using insects to detect, monitor and predict the distribution of *Xylella fastidiosa*: a case study in Corsica. Scientific Reports 8, 15628. <https://doi.org/10.1038/s41598-018-33957-z>{target="_blank"} 
+
+- Godefroid, M., Cruaud, A., Streito, J.-C., Rasplus, J.-Y., Rossi, J.-P., 2018. Climate change and the potential distribution of *Xylella fastidiosa* in Europe. bioRxiv. <https://doi.org/10.1101/289876>{target="_blank"} 
+
+- Rossi, J.-P., Kadaouré, I., Godefroid, M., Dobigny, G., 2018. Landscape epidemiology in urban environments: The example of rodent-borne *Trypanosoma* in Niamey, Niger. Infection, Genetics and Evolution 63, 307–315. <https://doi.org/10.1016/j.meegid.2017.10.006>{target="_blank"}
+
+- Chauvel, B., Fried, G., Monty, A., Rossi, J.-P., Tassus, X., Le Bourgeois, T., 2018. Ambroisie trifide, ambroisie à épis lisses : deux poids, deux mesures. Phytoma 712, 47–51.
+
+---
+
+- Denux, O., Dauffy-Richard, E., Rossi, J.-P., Augustin, S., 2017. Rediscovery of the endangered species Harpalus flavescens (Coleoptera: Carabidae) in the Loire River. Insect Conservation and Diversity 10, 488–494. <https://doi.org/10.1111/icad.12228>{target="_blank"}
+
+- Haran, J.M., Rossi, J.-P., Pajares, J., Bonifacio, L., Naves, P., Roques, A., Roux, G., 2017. Multi-scale and multi-site resampling of a study area in spatial genetics: implications for flying insect species. PeerJ 5, e4135. <https://doi.org/10.7717/peerj.4135>{target="_blank"} 
+
+---
+
+- Cruaud, A., Gautier, M., Rossi, J.-P., Rasplus, J.-Y., Gouzy, J., 2016. RADIS: analysis of RAD-seq data for interspecific phylogeny. Bioinformatics 32, 3027–3028. <https://doi.org/10.1093/bioinformatics/btw352>{target="_blank"}
+
+- Decaëns, T., Porco, D., James, S.W., Brown, G.G., Chassany, V., Dubs, F., Dupont, L., Lapied, E., Rougerie, R., Rossi, J.-P., Roy, V., 2016. DNA barcoding reveals diversity patterns of earthworm communities in remote tropical forests of French Guiana. Soil Biology and Biochemistry 92, 171–183. <https://doi.org/10.1016/j.soilbio.2015.10.009>{target="_blank"}
+
+- Godefroid, M., Rasplus, J.-Y., Rossi, J.-P., 2016. Is phylogeography helpful for invasive species risk assessment? The case study of the bark beetle genus *Dendroctonus*. Ecography 39, 1197–1209. <https://doi.org/10.1111/ecog.01474>{target="_blank"}
+
+- Godefroid, M., Rocha, S., Santos, H., Paiva, M.-R., Burban, C., Kerdelhué, C., Branco, M., Rasplus, J.-Y., Rossi, J.-P., 2016. Climate constrains range expansion of an allochronic population of the pine processionary moth. Diversity and Distribution. 22, 1288–1300. <https://doi.org/10.1111/ddi.12494>{target="_blank"}
+
+- Rossi, J.-P., Garcia, J., Roques, A., Rousselet, J., 2016. Trees outside forests in agricultural landscapes: spatial distribution and impact on habitat connectivity for forest organisms. Landscape Ecology 31, 243–254. <https://doi.org/10.1007/s10980-015-0239-8>{target="_blank"}
+
+- Rossi, J.-P., Imbault, V., Lamant, T., Rousselet, J., 2016. A dataset on the inventory of coniferous urban trees in the city of Orléans (France). Data in Brief 9, 803–806. <https://doi.org/10.1016/j.dib.2016.10.015>{target="_blank"} 
+
+- Rossi, J.-P., Imbault, V., Lamant, T., Rousselet, J., 2016. A citywide survey of the pine processionary moth Thaumetopoea pityocampa spatial distribution in Orléans (France). Urban Forestry & Urban Greening 20, 71–80. <https://doi.org/10.1016/j.ufug.2016.07.015>{target="_blank"}
+
+- Rossi, J.-P., Rousselet, J., 2016. Orman dışında geniş bir açık tarlada yer alan ağaçların uzamsal dağılımı ve orman böceklerinin habitat bağlantıları üzerindeki etkisi. The spatial distribution of trees outside forests in a large open-field region and its potential impact on habitat connectivity for forest insects. Turkish Journal of Forestry 17, 62-67. <https://dergipark.org.tr/en/pub/tjf/issue/20907/224638?publisher=iubu>{target="_blank"}
+
+---
+
+- Auger-Rozenberg, M.-A., Torres-Leguizamon, M., Courtin, C., Rossi, J.-P., Kerdelhué, C., 2015. Incongruent evolutionary histories of two parasitoids in the Mediterranean Basin: influence of host specialization and ecological characteristics. J. Biogeogr. 42, 1040–1051. <https://doi.org/10.1111/jbi.12495>{target="_blank"}
+
+- Dobigny, G., Garba, M., Tatard, C., Loiseau, A., Galan, M., Kadaouré, I., Rossi, J.-P., Picardeau, M., Bertherat, E., 2015. Urban Market Gardening and Rodent-Borne Pathogenic *Leptospira* in Arid Zones: A Case Study in Niamey, Niger. PLoS Negl Trop Dis 9, e0004097. <https://doi.org/10.1371/journal.pntd.0004097>{target="_blank"} 
+
+- Godefroid, M., Cruaud, A., Rossi, J.-P., Rasplus, J.-Y., 2015. Assessing the Risk of Invasion by Tephritid Fruit Flies: Intraspecific Divergence Matters. PLoS ONE 10, e0135209. <https://doi.org/10.1371/journal.pone.0135209>{target="_blank"} 
+
+- Kerdelhué, C., Battisti, A., Burban, C., Branco, M., Cassel-Lundhagen, A., İpekdal, K., Larsson, S., Lopez-Vaamonde, C., Magnoux, E., Mateus, E., Mendel, Z., Negrisolo, E., Paiva, M.-R., Pivotto, I.D., Rocha, S., Ronnås, C., Roques, A., Rossi, J.-P., Rousselet, J., Salvato, P., Santos, H., Simonato, M., Zane, L., 2015. Genetic Diversity and Structure at Different Spatial Scales in the Processionary Moths, in: Roques, A. (Ed.), Processionary Moths and Climate Change: An Update. Springer Netherlands, Dordrecht, pp. 163–226. <https://doi.org/10.1007/978-94-017-9340-7_4>{target="_blank"}
+
+- Nardin, M., Musch, B., Rousselle, Y., Guérin, V., Sanchez, L., Rossi, J.-P., Gerber, S., Marin, S., Pâques, L.E., Rozenberg, P., 2015. Genetic differentiation of European larch along an altitudinal gradient in the French Alps. Annals of Forest Science 72, 517–527. <https://doi.org/10.1007/s13595-015-0483-8>{target="_blank"}
+
+- Roques, L., Rossi, J.-P., Berestycki, H., Rousselet, J., Garnier, J., Roquejoffre, J.-M., Rossi, L., Soubeyrand, S., Robinet, C., 2015. Modeling the Spatio-temporal Dynamics of the Pine Processionary Moth, in: Roques, A. (Ed.), Processionary Moths and Climate Change: An Update. Springer Netherlands, Dordrecht, pp. 227–263. <https://doi.org/10.1007/978-94-017-9340-7_5>{target="_blank"}
+
+- Haye, T., Gariepy, T., Hoelmer, K., Rossi, J.-P., Streito, J.-C., Tassus, X., Desneux, N., 2015. Range expansion of the invasive brown marmorated stinkbug, *Halyomorpha halys*: an increasing threat to field, fruit and vegetable crops worldwide. Journal of Pest Science 88, 665–673. <https://doi.org/10.1007/s10340-015-0670-2>{target="_blank"}
+
+- Rossi, J.-P., Lavelle, P., 2015. The spatiotemporal pattern of earthworm community in the grass savannas of Lamto (Côte d'Ivoire). Biodiversity Data Journal 3, e6515. <https://doi.org/10.3897/BDJ.3.e6515>{target="_blank"} 
+
+- Rousselet, J., Roques, A., Garcia, J., Rossi, J.-P., 2015. An exhaustive inventory of coniferous trees in an agricultural landscape. Biodiversity Data Journal 3, e4660. <https://doi.org/10.3897/BDJ.3.e4660>{target="_blank"} 
+
+---
+
+- Garba, M., Dalecky, A., Kadaoure, I., Kane, M., Hima, K., Veran, S., Gagare, S., Gauthier, P., Tatard, C., Rossi, J.-P., Dobigny, G., 2014. Spatial Segregation between Invasive and Native Commensal Rodents in an Urban Environment: A Case Study in Niamey, Niger. PLoS ONE 9, e110666. <https://doi.org/10.1371/journal.pone.0110666>{target="_blank"} 
+
+- Garba, M., Kane, M., Gagare, S., Kadaoure, I., Sidikou, R., Rossi, J.-P., Dobigny, G., 2014. Local perception of rodent-associated problems in Sahelian urban areas: a survey in Niamey, Niger. Urban Ecosystems 17, 573–584. <https://doi.org/10.1007/s11252-013-0336-x>{target="_blank"}
+
+- Jiménez, J.J., Decaëns, T., Lavelle, P., Rossi, J.-P., 2014. Dissecting the multi-scale spatial relationship of earthworm assemblages with soil environmental variability. BMC Ecology 14, 26. <https://doi.org/10.1186/s12898-014-0026-4>{target="_blank"} 
+
+- Rossi, J.-P., Nardin, M., Godefroid, M., Ruiz-Diaz, M., Sergent, A.-S., Martinez-Meier, A., Pâques, L., Rozenberg, P., 2014. Dissecting the Space-Time Structure of Tree-Ring Datasets Using the Partial Triadic Analysis. PLoS ONE 9, e108332. <https://doi.org/10.1371/journal.pone.0108332>{target="_blank"} 
+
+- Streito, J.C., Rossi, J.-P., Haye, T., Hoelmer, K., Tassus, X., 2014. La punaise diabolique à la conquête de la France. Phytoma 677, 26–30.
+
+---
+
+- Mercier, A., Garba, M., Bonnabau, H., Kane, M., Rossi, J.-P., Darde, M.-L., Dobigny, G., 2013. Toxoplasmosis seroprevalence in urban rodents: a survey in Niamey, Niger. Memórias do Instituto Oswaldo Cruz 108, 399–407. <https://doi.org/10.1590/S0074-0276108042013002>{target="_blank"}
+
+- Piffaretti, J., Rossi, J.-P., Vanlerberghe-Masutti, F., Genson, G., d’Acier, A.C., Jousselin, E., 2013. Molecular identification and ecological characteristics of two cryptic lineages within a cosmopolitan aphid pest, *Brachycaudus helichrysi* (Hemiptera: Aphididae). Applied Entomology and Zoology 48, 155–164. <https://doi.org/10.1007/s13355-013-0165-7>{target="_blank"}
+
+- Rousselet, J., Imbert, C.-E., Dekri, A., Garcia, J., Goussard, F., Vincent, B., Denux, O., Robinet, C., Dorkeld, F., Roques, A., Rossi, J.-P., 2013. Assessing species distribution using Google Street View: A pilot study with the pine processionary moth. PLoS One 8, e74918. <https://doi.org/10.1371/journal.pone.0074918>{target="_blank"} 
+
+- Rossi J.-P. Garcia J. Rousselet J. 2013. Prendre en compte les arbres ornementaux pour mieux comprendre la perméabilité des paysages à la dispersion des ravageurs. Le cas des arbres hors forêt et de la chenille processionnaire du pin. pp. 469-476. 3e Conférence sur l'entretien des Zones Non Agricoles 15 16 et 17 octobre 2013 ENSAT Toulouse (France). ⟨hal-01189778⟩ <https://hal.inrae.fr/hal-01189778v1>{target="_blank"}
+
+<!-- - Rossi, J.-P., Garcia, J., Rousselet, J. 2012. Prendre en compte les arbres ornementaux pour mieux comprendre la perméabilité des paysages à la dispersion des ravageurs. Le cas des arbres hors forêt et de la chenille processionnaire du pin. 3. AFPP. Conférence sur l'Entretien des Espaces Verts, Jardins, Gazons, Forêts, Zones Aquatiques et Autres Zones Non Agricoles, Oct 2013, Toulouse, France. ⟨hal-01189778⟩ <https://hal.inrae.fr/hal-01189778v1>{target="_blank"} -->
+
+- Jérôme Rousselet, Vanessa Imbault, Jacques Garcia, Jean-Pierre Rossi, Thierry Lamant, et al. 2013. Inventaire des arbres-hôtes de la processionnaire du pin à l'interface ville-forêt-champs. 3. AFPP. Conférence sur l'Entretien des Espaces Verts, Jardins, Gazons, Forêts, Zones Aquatiques et Autres Zones Non Agricoles, Oct 2013, Toulouse, France. pp.503-512. ⟨hal-01268456⟩ <https://hal.inrae.fr/hal-01268456v1>{target="_blank"}
+
+- Vanessa Imbault, Jacques Garcia, Thierry Lamant, Christelle Robinet, Alain Roques, et al. 2013. Inventaire des arbres-hôtes de la processionnaire du pin à l'interface ville-forêt-champs. 3. AFPP. Conférence sur l'Entretien des Espaces Verts, Jardins, Gazons, Forêts, Zones Aquatiques et Autres Zones Non Agricoles, Oct 2013, Toulouse, France. 1 p. ⟨hal-01268600⟩ <https://hal.inrae.fr/hal-01268600v1>{target="_blank"}
+
+---
+
+- Auclerc, A., Nahmani, J., Aran, D., Baldy, V., Callot, H., Gers, C., Iorio, E., Lapied, E., Lassauce, A., Pasquet, A., Spelda, Jörg., Rossi, J.-P., Guérold, F., 2012. Changes in soil macroinvertebrate communities following liming of acidified forested catchments in the Vosges Mountains (North-eastern France). Ecological Engineering 42, 260–269. <https://doi.org/10.1016/j.ecoleng.2012.02.024>{target="_blank"}
+
+- Horn, A., Kerdelhué, C., Lieutier, F., Rossi, J.-P., 2012. Predicting the distribution of the two bark beetles *Tomicus destruens* and *Tomicus piniperda* in Europe and the Mediterranean region. Agricultural and Forest Entomology 14, 358–366. <https://doi.org/10.1111/j.1461-9563.2012.00576.x>{target="_blank"}
+
+- Jiménez, J.-J., Decaëns, T., Rossi, J.-P., 2012. Soil environmental heterogeneity allows spatial co-occurrence of competitor earthworm species in a gallery forest of the Colombian ‘Llanos.’ Oikos 121, 915–926. <https://doi.org/10.1111/j.1600-0706.2012.20428.x>{target="_blank"}
+
+- Rey, O., Estoup, A., Vonshak, M., Loiseau, A., Blanchet, S., Calcaterra, L., Chifflet, L., Rossi, J.-P., Kergoat, G.J., Foucaud, J., Orivel, J., Leponce, M., Schultz, T., Facon, B., 2012. Where do adaptive shifts occur during invasion? A multidisciplinary approach to unravelling cold adaptation in a tropical ant species invading the Mediterranean area. Ecology Letters 15, 1266–1275. <https://doi.org/10.1111/j.1461-0248.2012.01849.x>{target="_blank"}
+
+- Rousselet, J., Imbert, C.-E., Dekri, A., Garcia, J., Goussard, F., Vincent, B., Denux, O., Robinet, C., Dorkeld, F., Roques, A., Rossi, J.-P., 2012. Utilisation des données Google Street View pour cartographier la distribution géographique des espèces. Une étude préliminaire de la processionnaire du pin (*Thaumetopoea pityocampa*). Annales de l’INRGREF 173–188.
+
+- Horn, A., Kerdelhué, C., Lieutier, F., Rossi, J.-P., 2012. Modélisation de la distribution géographique de deux scolytes, *Tomicus destruens* et *Tomicus piniperda*, en Europe et dans la région méditerranéenne. Annales de l’INRGREF 17, 157–171.
+
+- Ghaioule, D., Rossi, J.-P., Lieutier, F., 2012. Etude spatio-temporelle préliminaire du dépérissement du cèdre (*Cedrus atlantica* Manetti) dans deux peuplements du Moyen Atlas marocain. Annales de l’INRGREF 17, 173–188.
+
+---
+
+- Dulaurent, A.-M., Rossi, J.-P., Deborde, C., Moing, A., Menassieu, P., Jactel, H., 2011. Honeydew feeding increased the longevity of two egg parasitoids of the pine processionary moth: Honeydew feeding of pine processionary moth parasitoids. Journal of Applied Entomology 135, 184–194. <https://doi.org/10.1111/j.1439-0418.2010.01547.x>{target="_blank"}
+
+- Rossi, J.-P., 2011. rich: An R Package to Analyse Species Richness. Diversity 3, 112–120. <https://doi.org/10.3390/d3010112>{target="_blank"} 
+
+- Rossi, J.-P., 2011. Extrapolation and biodiversity indicators: Handle with caution! Ecological Indicators 11, 1490–1491. https://doi.org/10.1016/j.ecolind.2010.09.002
+
+- Samalens, J.-C., Rossi, J.-P., 2011. Does landscape composition alter the spatiotemporal distribution of the pine processionary moth in a pine plantation forest? Popul Ecol 53, 287–296. <https://doi.org/10.1007/s10144-010-0227-4>{target="_blank"}
+
+- Santos, H., Burban, C., Rousselet, J., Rossi, J.-P., Branco, M., Kerdelhué, C., 2011. Incipient allochronic speciation in the pine processionary moth (*Thaumetopoea pityocampa*, Lepidoptera, Notodontidae): Allochronic speciation in the PPM. Journal of Evolutionary Biology 24, 146–158. <https://doi.org/10.1111/j.1420-9101.2010.02147.x>{target="_blank"}
+
+---
+
+- Rossi, J.P., Celini, L., Mora, P., Mathieu, J., Lapied, E., Nahmani, J., Ponge, J.-F., Lavelle, P., 2010. Decreasing fallow duration in tropical slash-and-burn agriculture alters soil macroinvertebrate diversity: A case study in southern French Guiana. Agriculture, Ecosystems & Environment 135, 148–154. <https://doi.org/10.1016/j.agee.2009.08.012>{target="_blank"}
+
+- Rossi, J.-P., van Halder, I., 2010. Towards indicators of butterfly biodiversity based on a multiscale landscape description. Ecological Indicators 10, 452–458. <https://doi.org/10.1016/j.ecolind.2009.07.016>{target="_blank"}
+
+---
+
+- Bertheau, C., Salle, A., Rossi, J.-P., Bankhead-dronnet, S., Pineau, X., Roux-morabito, G., Lieutier, F., 2009. Colonisation of native and exotic conifers by indigenous bark beetles (Coleoptera: Scolytinae) in France. Forest Ecology and Management 258, 1619–1628. <https://doi.org/10.1016/j.foreco.2009.07.020>{target="_blank"}
+
+- Decaëns, T., Jiménez, J.J., Rossi, J.-P., 2009. A null-model analysis of the spatio-temporal distribution of earthworm species assemblages in Colombian grasslands. Journal of Tropical Ecology 25, 415–427. <https://doi.org/10.1017/S0266467409006075>{target="_blank"}
+
+- Mathieu, J., Grimaldi, M., Jouquet, P., Rouland, C., Lavelle, P., Desjardins, T., Rossi, J.-P., 2009. Spatial patterns of grasses influence soil macrofauna biodiversity in Amazonian pastures. Soil Biology and Biochemistry 41, 586–593. <https://doi.org/10.1016/j.soilbio.2008.12.020>{target="_blank"}
+
+- Rossi, J.-P., Franc, A., Rousseau, G.X., 2009. Indicating soil quality and the GISQ. Soil Biology and Biochemistry 41, 444–445. <https://doi.org/10.1016/j.soilbio.2008.10.004>{target="_blank"}
+
+- Rossi, J.-P., Samalens, J.-C., Guyon, D., van Halder, I., Jactel, H., Menassieu, P., Piou, D., 2009. Multiscale spatial variation of the bark beetle *Ips sexdentatus* damage in a pine plantation forest (Landes de Gascogne, Southwestern France). Forest Ecology and Management 257, 1551–1557. <https://doi.org/10.1016/j.foreco.2008.12.012>{target="_blank"}
+
+- Samalens, J.-C., Rossi, J.-P., Guyon, D., van Halder, I., Menassieu, P., Piou, D., Jactel, H., 2009. Estimation des dégâts post-tempête de scolytes à l’échelle du massif forestier par cheninement le long des pistes, in: La Forêt Face Aux Tempêtes. Editions Quae, pp. 101–110.
+
+---
+
+- Dutech, C., Rossi, J.-P., Fabreguettes, O., Robin, C., 2008. Geostatistical genetic analysis for inferring the dispersal pattern of a partially clonal species: example of the chestnut blight fungus. Molecular Ecology 17, 4597–4607. <https://doi.org/10.1111/j.1365-294X.2008.03941.x>{target="_blank"}
+
+- Thomas, F., Rossi, J.-P., Decaëns, T., Grimaldi, M., Lavelle, P., Fernando da Silva Martins, P., Garnier-Zarli, E., 2008. Comparative analysis of *Andiodrilus pachoensis* casts in forests and pastures of South-Eastern Amazon (Brazil). European Journal of Soil Biology 44, 545–553. <https://doi.org/10.1016/j.ejsobi.2008.09.003>{target="_blank"}
+
+---
+
+- Barbaro, L., Rossi, J.-P., Vetillard, F., Nezan, J., Jactel, H., 2007. The spatial distribution of birds and carabid beetles in pine plantation forests: the role of landscape composition and structure. Journal of Biogeography 34, 652–664. <https://doi.org/10.1111/j.1365-2699.2006.01656.x>{target="_blank"}
+
+- Barot, S., Rossi, J.-P., Lavelle, P., 2007. Self-organization in a simple consumer–resource system, the example of earthworms. Soil Biology and Biochemistry 39, 2230–2240. <https://doi.org/10.1016/j.soilbio.2007.03.021>{target="_blank"}
+
+- Folgarait, P.J., Gorosito, N., Pizzio, R., Rossi, J.P., Fernández, J., 2007. Camponotus punctulatus ant’s demography: a temporal study across land-use types and spatial scales. Insectes Sociaux 54, 42–52. <https://doi.org/10.1007/s00040-007-0906-0>{target="_blank"}
+
+- Samalens, J.C., Rossi, J.P., Guyon, D., Van Halder, I., Menassieu, P., Piou, D., Jactel, H., 2007. Adaptive roadside sampling for bark beetle damage assessment. Forest Ecology and Management 253, 177–187. <https://doi.org/10.1016/j.foreco.2007.07.015>{target="_blank"}
+
+---
+
+- Jiménez, J.-J., Decaëns, T., Rossi, J.-P., 2006. Stability of the spatio-temporal distribution and niche overlap in neotropical earthworm assemblages. Acta Oecologica 30, 299–311. <https://doi.org/10.1016/j.actao.2006.06.008>{target="_blank"}
+
+- Jiménez, J.J., Rossi, J.-P., 2006. Spatial dissociation between two endogeic earthworms in the Colombian “Llanos.” European Journal of Soil Biology 42, S218–S224. <https://doi.org/10.1016/j.ejsobi.2006.07.032>{target="_blank"}
+
+- Lavelle, P., Decaëns, T., Aubert, M., Barot, S., Blouin, M., Bureau, F., Margerie, P., Mora, P., Rossi, J.-P., 2006. Soil invertebrates and ecosystem services. European Journal of Soil Biology 42, S3–S15. <https://doi.org/10.1016/j.ejsobi.2006.10.002>{target="_blank"}
+
+- Mora, P., Seuge, C., Rossi, J.-P., Rouland, C., 2006. Abundance of biogenic structures of earthworms and termites in a mango orchard. European Journal of Soil Biology 42, S250–S253. <https://doi.org/10.1016/j.ejsobi.2006.07.023>{target="_blank"}
+
+- Nahmani, J., Lavelle, P., Rossi, J.-P., 2006. Does changing the taxonomical resolution alter the value of soil macroinvertebrates as bioindicators of metal pollution? Soil Biology and Biochemistry 38, 385–396. <https://doi.org/10.1016/j.soilbio.2005.04.037>{target="_blank"}
+
+- Ponge, J.-F., Topoliantz, S., Ballof, S., Rossi, J.-P., Lavelle, P., Betsch, J.-M., Gaucher, P., 2006. Ingestion of charcoal by the Amazonian earthworm Pontoscolex corethrurus: A potential for tropical soil fertility. Soil Biology and Biochemistry 38, 2008–2009. <https://doi.org/10.1016/j.soilbio.2005.12.024>{target="_blank"}
+
+- Rossi, J.P., Huerta, E., Fragoso, C., Lavelle, P., 2006. Soil properties inside earthworm patches and gaps in a tropical grassland (la Mancha, Veracruz, Mexico). European Journal of Soil Biology 42, S284–S288. <https://doi.org/10.1016/j.ejsobi.2006.07.024>{target="_blank"}
+
+- Rossi, J.-P., Mathieu, J., Cooper, M., Grimaldi, M., 2006. Soil macrofaunal biodiversity in Amazonian pastures: Matching sampling with patterns. Soil Biology and Biochemistry 38, 2178–2187. <https://doi.org/10.1016/j.soilbio.2006.01.020>{target="_blank"}
+
+---
+
+- Mathieu, J., Rossi, J.-P., Mora, P., Lavelle, P., Martins, P.F. da S., Rouland, C., Grimaldi, M., 2005. Recovery of Soil Macrofauna Communities after Forest Clearance in Eastern Amazonia, Brazil. Conservation Biology 19, 1598–1605. <https://doi.org/10.1111/j.1523-1739.2005.00200.x>{target="_blank"}
+
+- Rossi, J.-P., Blanchart, E., 2005. Seasonal and land-use induced variations of soil macrofauna composition in the Western Ghats, southern India. Soil Biology and Biochemistry 37, 1093–1104. <https://doi.org/10.1016/j.soilbio.2004.11.008>{target="_blank"}
+
+---
+
+- Lavelle, P., Charpentier, F., Villenave, C., Rossi, J.-P., Derouard, L., Pashanasi, B., André, J., Ponge, J.-F., Bernier, N., 2004. Effects of earthworms on soil organic matter and nutrient dynamics at a landscape scale over decades, in: Edwards, C.A. (Ed.), Earthworm Ecology, 2nd Edition. CRC Press, Boca Raton, Florida, pp. 145–160. <https://doi.org/10.1201/9781420039719.pt4>{target="_blank"}
+
+- Mathieu, J., Rossi, J.-P., Grimaldi, M., Mora, P., Lavelle, P., Rouland, C., 2004. A multi-scale study of soil macrofauna biodiversity in Amazonian pastures. Biology and Fertility of Soils 40, 300–305. <https://doi.org/10.1007/s00374-004-0777-8>{target="_blank"}
+
+- Rossi, J.-P., Nuutinen, V., 2004. The effect of sampling unit size on the perception of the spatial pattern of earthworm (*Lumbricus terrestris* L.) middens. Applied Soil Ecology 27, 189–196. <https://doi.org/10.1016/j.apsoil.2004.03.001>{target="_blank"}
+
+- Thomas, F., Folgarait, P., Lavelle, P., Rossi, J.P., 2004. Soil macrofaunal communities along an abandoned rice field chronosequence in Northern Argentina. Applied Soil Ecology 27, 23–29. <https://doi.org/10.1016/j.apsoil.2004.03.002>{target="_blank"}
+
+---
+
+- Nahmani, J., Rossi, J.-P., 2003. Soil macroinvertebrates as indicators of pollution by heavy metals. Comptes Rendus Biologies 326, 295–303. <https://doi.org/10.1016/S1631-0691(03)00070-2>{target="_blank"}
+
+- Rossi, J.-P., 2003. The spatiotemporal pattern of a tropical earthworm species assemblage and its relationship with soil structure. Pedobiologia 47, 497–503. <https://doi.org/10.1078/0031-4056-00219>{target="_blank"}
+
+- Rossi, J.-P., 2003. Short-range structures in earthworm spatial distribution. Pedobiologia 47, 582–587. <https://doi.org/10.1078/0031-4056-00233>{target="_blank"}
+
+- Rossi, J.-P., 2003. Clusters in earthworm spatial distribution. Pedobiologia 47, 490–496. <https://doi.org/10.1078/0031-4056-00218>{target="_blank"}
+
+---
+
+- Decaëns, T., Rossi, J.P., 2001. Spatio-temporal structure of earthworm community and soil heterogeneity in a tropical pasture. Ecography 24, 671–682. <https://doi.org/10.1111/j.1600-0587.2001.tb00529.x>{target="_blank"}
+
+- Jiménez, J.J., Rossi, J.-P., Lavelle, P., 2001. Spatial distribution of earthworms in acid-soil savannas of the eastern plains of Colombia. Applied Soil Ecology 17, 267–278. <https://doi.org/10.1016/S0929-1393(01)00133-0>{target="_blank"}
+
+- Lavelle, P., Barros, E., Blanchart, E., Brown, G., Desjardins, T., Mariani, L., Rossi, J.-P., 2001. SOM management in the tropics: Why feeding the soil macrofauna? Nutrient Cycling in Agroecosystems 61, 53–61. <https://doi.org/10.1007/978-94-017-2172-1_6>{target="_blank"}
+
+- Rossi J.-P., Boudjema G., 2001. Distribution spatiale de la faune des sols et orientations possibles de certaines options de gestion des terres agricoles. Comptes Rendus de l’Académie d’Agriculture de France 87, 139–148.
+
+---
+
+- Kerdelhué, C., Rossi, J.-P., Rasplus, J.-Y., 2000. Comparative community ecology studies on old world figs and fig wasps. Ecology 81, 2832–2849. <https://doi.org/10.1890/0012-9658(2000)081[2832:CCESOO]2.0.CO;2>{target="_blank"}
+
+---
+
+- Barois, I., Lavelle, P., Brossard, M., Tondoh, J., Angeles Martinez, M. de los, Rossi, J.P., Senapati, B.K., Angeles, A., Fragoso, C., Jimenez, J.J., Decaëns, T., Lattaud, C., Kanyonyo, J., Blanchart, E., Chapuis, L., Brown, G., Moreno, A., 1999. Ecology of earthworm species with large environmental tolerance and/or extended distributions, in: Lavelle, P., Brussaard, L., Hendrix, P. (Eds.), Earthworm Management in Tropical Agroecosystems. CABI, Wallingford, pp. 57–85.
+
+---
+
+- Lavelle, P., Pashanasi, B., Charpentier, F., Gilot, C., Rossi, J.P., Derouard, L., André, J., Ponge, J.F., Bernier, N., 1998. Large-scale effects of earthworms on soil organic matter and nutrient dynamics, in: Earthworm Ecology. CRC Press, pp. 103–122.
+
+- Rossi, J.P., Lavelle, P., 1998. Earthworm aggregation in the Savannas of Lamto (Côte d’Ivoire). Applied Soil Ecology 7, 195–199. <https://doi.org/10.1016/S0929-1393(97)00033-4>{target="_blank"}
+
+- Rossi, J.-P., Quénéhervé, P., 1998. Relating species density to environmental variables in presence of spatial autocorrelation: a study case on soil nematodes distribution. Ecography 21, 117–123. <https://doi.org/10.1111/j.1600-0587.1998.tb00665.x>{target="_blank"}
+
+---
+
+- Reversat, G., Rossi, J.-P., Bernhard, P., 1997. Analyse des courbes de survie de nématodes phytoparasites selon le modèle de Teissier. Comptes Rendus de l’Académie des Sciences - Series III - Sciences de la Vie 320, 259–266. <https://doi.org/10.1016/S0764-4469(97)86934-X>{target="_blank"}
+
+- Rossi, J.-P., Lavelle, P., Albrecht, A., 1997. Relationships between spatial pattern of the endogeic earthworm *Polypheretima elongata* and soil heterogeneity. Soil Biology and Biochemistry 29, 485–488. <https://doi.org/10.1016/S0038-0717(96)00105-8>{target="_blank"}
+
+- Laurent, J.-Y., Rossi, J.-P., 1997. Stratégies d’échantillonnage au champ: détermination du nombre et de la disposition spatiale des points de prélèvements, in: Rambaud, D. (Ed.), L’échantillonnage: du prélèvement à l’analyse, Colloques et Séminaires. ORSTOM, Paris, pp. 43–52.
+
+---
+
+- Delaville, L., Rossi, J.-P., Quénéhervé, P., 1996. Plant row and soil factors influencing the microspatial patterns of plant-parasitic nematodes on sugarcane in Martinique. Fundamental and Applied Nematology 19, 321–328.
+
+- Rossi, J.P., 1996. Statistical tool for soil biology: 11. Autocorrelogram and Mantel test. European Journal of Soil Biology 32, 195–203.
+
+- Rossi, J.P., Blanchart, E., Lavelle, P., 1996. Effects of earthworms on some soil physical and chemical properties: their potential use in tropical agriculture, in: Agriculture Intensive Dans Les Îles de La Caraïbe: Enjeux, Contraintes et Perspectives. pp. 428–440.
+
+- Rossi, J.-P., Delaville, L., Quénéhervé, P., 1996. Microspatial structure of a plant-parasitic nematode community in a sugarcane field in Martinique. Applied Soil Ecology 3, 17–26. <https://doi.org/10.1016/0929-1393(95)00067-4>{target="_blank"}
+
+---
+
+- Chotte, J.-L., Laurent, J.-Y., Rossi, J.-P., 1995. A modified hydropneumo-elutriation apparatus for quantitative root separation from large soil core samples. Communications in Soil Science and Plant Analysis 26, 2703–2709. <https://doi.org/10.1080/00103629509369479>{target="_blank"}
+
+- Rossi, J.-P., Lavelle, P., Tondoh, J.E., 1995. Statistical tool for soil biology: X. Geostatistical analysis. European Journal of Soil Biology 31, 173–181.
+
+# Scientific Expert Reports
+
+- Anses 2026. *Amaranthus palmeri* S. Watson. Risque d’introduction et de dissémination aux Antilles françaises <a href="https://www.anses.fr/system/files/SANTVEG-2024-AUTO-0072-RA.pdf">Lien.</a>
+
+- Anses 2025. *Amaranthus palmeri* S.Watson risque d’introduction et de dissémination en France
+<a href="https://www.anses.fr/system/files/SANTVEG2024-AUTO-0072-RA.pdf">Lien.</a>
+
+- Anses 2021. Évaluation du risque phytosanitaire simplifiée lié à *Brachyplatys subaeneus* pour la Martinique et la Guyane. <a href="https://www.anses.fr/fr/system/files/SANTVEG2020SA0133Ra.pdf">Lien.</a>
+
+- Anses 2018. Analyse de risque phytosanitaire portant sur la berce du Caucase. <a href="https://www.anses.fr/fr/system/files/SANTVEG2016SA0066Ra.pdf">Lien.</a>
+
+- Anses 2017a. Analyse de risques relative à l’ambroisie à épis lisses (*Ambrosia psilostachya* DC.) et élaboration de recommandation de gestion. <a href="https://www.anses.fr/fr/system/files/SANTVEG2016SA0065Ra.pdf">Lien.</a>
+
+- Anses 2017b. Analyses de risque relative à l’ambroisie trifide (*Ambrosia trifida* L.) et élaboration de recommandations de gestion. <a href="https://www.anses.fr/fr/system/files/SANTVEG2016SA0090Ra.pdf">Lien.</a>
+
+- Anses 2014. Analyse de risque phytosanitaire express *Halyomorpha halys* - la punaise diabolique. <a href="https://www.anses.fr/fr/system/files/SVEG2013sa0093Ra.pdf">Lien.</a>
+
+# Datasets
+
+- Rossi, J.-P., Streito, J.-C., İpekdal, K.& Constant, N. 2026. Climate suitability raster maps for *Cryptoblabes gnidiella* (Millière, 1867) in the Mediterranean Basin under past, present and future climates [Figure]. Zenodo. https://doi.org/10.5281/zenodo.19564722
+
+- Rossi, J.-P., Kerdelhué, C.& Roques, A. 2026. Niche dynamics of the cerambicid *Xylotrechus chinensis* [Dataset]. Zenodo. https://doi.org/10.5281/zenodo.18683833
+
+- Rossi, J.-P. 2025. The range of the pine processionnary moth *Thaumetopoea pityocampa* (Denis & Schiffermüller) under climate change. Zenodo. <a href="https://doi.org/10.5281/zenodo.14755891">https://doi.org/10.5281/zenodo.14755891</a>
+
+- Rossi, J.-P., 2024. Current and future potential range of the Spotted lanternfly *Lycorma delicatula* (White, 1845). <a href="https://doi.org/10.57745/U1YKUR">https://doi.org/10.57745/U1YKUR</a>
+
+- Rossi, J.-P., 2024. The potential range of *Agrilus planipennis* according to current and future climate conditions. <a href="https://doi.org/10.5281/zenodo.10955964">https://doi.org/10.5281/zenodo.10955964</a>
+
+- Rossi, J.-P., Urvois, T., Kerdelhué, C., Auger-Rozenberg, M.-A., Roques, A., 2024. Potential geographical distribution of two genetic lineages of the ambrosia beetle *Xylosandrus crassiusculu*s and the impact of climate change. <a href="https://doi.org/10.57745/UB977K">https://doi.org/10.57745/WOHBMY</a>
+
+- Streito, J.-C., Rossi, J.-P. 2023. Pictures of *Aleurocanthus spiniferus* from French outbreak in 2023. <a href="https://doi.org/10.57745/WOHBMY">https://doi.org/10.57745/WOHBMY</a>
+
+- Rossi J.-P. 2023. Potential range the brown marmorated stinkbug *Halyomorpha halys* (Stål, 1855) according to current and future climate conditions: results from species distribution modeling. <a href="https://doi.org/10.57745/21CQDS">https://doi.org/10.57745/21CQDS</a>
+
+- Rossi J.-P. 2022. Climate change and the potential distribution of the glassy-winged sharpshooter (*Homalodisca vitripennis*), an insect vector of *Xylella fastidiosa*. <a href="https://doi.org/10.57745/ABP160">https://doi.org/10.57745/ABP160</a>
+
+- Martin, J.-C., Buradino, M. Rossi, J.-P., Kerdelhué, C., 2020. Emergence dates observed along an altitudinal transect in Mont Ventoux, France, for the pine processionary moth between 1970 and 1984.
+<a href="https://doi.org/10.15454/FGRKAY">https://doi.org/10.15454/FGRKAY</a>
